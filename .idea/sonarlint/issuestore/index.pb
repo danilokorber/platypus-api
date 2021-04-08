@@ -1,0 +1,27 @@
+
+9
+	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
+7
+pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
+i
+9src/main/java/io/easyware/platypus/api/mail/TextInfo.java,b/5/b56833e08c2c189bd56df4881d0e47d0cd8db480
+q
+Asrc/main/java/io/easyware/platypus/api/mail/MessageListEntry.java,5/4/54934c694a6fcd61d4f1cecd89bda57ab5542375
+l
+<src/main/java/io/easyware/platypus/api/mail/EncodedSize.java,f/c/fc8cb84806d46e3bba27aae9428caac21c0a07ad
+k
+;src/main/java/io/easyware/platypus/api/mail/Attachment.java,2/7/272b9ae3b7c1b4f07d1a03233e947cb5fdbd2c97
+h
+8src/main/java/io/easyware/platypus/api/mail/Address.java,c/8/c83c210a6fa6163c8fd0da43e1ebc52057941c54
+l
+<src/main/java/io/easyware/platypus/api/mail/MessageList.java,e/7/e77ffec42b3072f5c45271f232b5d88f4e5dd3a6
+h
+8src/main/java/io/easyware/platypus/api/mail/Service.java,f/4/f407439de1ac335bfcc52abbb410fa04c5dcfe4c
+d
+4src/main/java/io/easyware/platypus/api/mail/Api.java,3/2/32a5f038ec290ac74217923a092414712a428435
+o
+?src/main/java/io/easyware/platypus/api/mail/WebhookMessage.java,8/c/8cde3d96911773ce2ab3ce8cea1b26bfbf595de4
+G
+config/sonar.properties,c/7/c7156e5d3dced778f4aca1554c3a062d71411681
+B
+config/Jenkinsfile,b/6/b6d0359779081f23c2f08ce9e9ea8d23040213f5

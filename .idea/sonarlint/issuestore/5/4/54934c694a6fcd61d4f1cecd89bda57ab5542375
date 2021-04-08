@@ -1,0 +1,25 @@
+
+
+java:S1319§"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(’æ‚…8’ó‘‹/
+
+java:S1319‡"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Íë“¢8çËò‘‹/
+
+java:S1319ƒ"mThe type of the "cc" object should be an interface such as "List" rather than the implementation "ArrayList".(á»ª ÿÿÿÿÿ8çËò‘‹/
+”
+java:S1319£"qThe type of the "labels" object should be an interface such as "List" rather than the implementation "ArrayList".(ÉñßÎıÿÿÿÿ8ãôò‘‹/
+
+java:S1319w"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ë©Í’8‚ò‘‹/
+Œ
+java:S1319‹"nThe type of the "bcc" object should be an interface such as "List" rather than the implementation "ArrayList".(ø½êÉ8çËò‘‹/
+“
+java:S1319Ÿ"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(‚ˆšÂüÿÿÿÿ8ãôò‘‹/
+”
+java:S1319«"vThe type of the "attachments" object should be an interface such as "List" rather than the implementation "ArrayList".(¢²Ãö8’ó‘‹/
+M
+java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8’ó‘‹/
+‰
+java:S1319{"mThe type of the "to" object should be an interface such as "List" rather than the implementation "ArrayList".(ìŒ£^8‚ò‘‹/
+’
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÜšŞ ÿÿÿÿÿ8‚ò‘‹/
+£
+java:S1186	"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(âÇË·ıÿÿÿÿ8ë‰’‹/

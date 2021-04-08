@@ -1,0 +1,7 @@
+io/easyware/platypus/api/mail/Attachment.class
+io/easyware/platypus/api/mail/Api.class
+io/easyware/platypus/api/mail/Address.class
+io/easyware/platypus/api/mail/EncodedSize.class
+io/easyware/platypus/api/mail/MessageList.class
+io/easyware/platypus/api/mail/MessageListEntry.class
+io/easyware/platypus/api/mail/TextInfo.class

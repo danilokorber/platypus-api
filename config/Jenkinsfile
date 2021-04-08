@@ -8,7 +8,8 @@ def props
 pipeline {
 	agent {
         docker {
-            image 'dkorber/java-node:latest'
+            //image 'dkorber/java-node:latest'
+            image 'maven'
             args '-p ' + randomPort + ':' + randomPort + ' -v /var/run/docker.sock:/var/run/docker.sock --name jenkins-' + randomUUID
         }
     }
@@ -27,7 +28,7 @@ pipeline {
 
 					echo "applicationName: ${props.name}"
 					echo "applicationVersion: ${props.version}"
-					sh "npm config set registry https://${props.jenkins.nexus.hostname}/repository/easyware-npm-group"
+					//sh "npm config set registry https://${props.jenkins.nexus.hostname}/repository/easyware-npm-group"
 					sh "docker login -u ${CRED_NEXUS_USR} -p ${CRED_NEXUS_PSW} ${props.jenkins.nexus.hostname}:${props.jenkins.nexus.hostedPort}"
 				}
 			}

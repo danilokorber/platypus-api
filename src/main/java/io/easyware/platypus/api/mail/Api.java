@@ -42,6 +42,7 @@ public class Api {
             long unreadMessages = messages.getMessages().stream().filter(message -> message.isUnseen()).count();
             System.out.println(unreadMessages + " unread messages.");
         }
+        
         return Response.ok().build();
     }
 }

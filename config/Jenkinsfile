@@ -8,7 +8,7 @@ def props
 pipeline {
 	agent {
         docker {
-            image 'nexus.easyware.io:8082/easyware/jenkins:latest'
+            image 'nexus.easyware.io:8083/easyware/jenkins:latest'
             args '-p ' + randomPort + ':' + randomPort + ' -v /var/run/docker.sock:/var/run/docker.sock --name jenkins-' + randomUUID
         }
     }

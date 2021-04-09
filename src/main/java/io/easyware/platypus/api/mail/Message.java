@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-public class MessageListEntry {
+public class Message {
 
-    public MessageListEntry() {}
+    public Message() {}
 
     private String id;
     private float uid;
@@ -19,6 +19,8 @@ public class MessageListEntry {
     private float size;
     private String subject;
     private Address from;
+    private Address replyTo;
+    private Address sender;
     private ArrayList<Address> to;
     private ArrayList<Address> cc;
     private ArrayList<Address> bcc;

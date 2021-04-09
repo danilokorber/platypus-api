@@ -30,7 +30,7 @@ public class Api {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response webhook(WebhookMessage webhookMessage) {
-        System.out.println(webhookMessage.toString());
+        System.out.println(webhookMessage.getData().toString());
         return Response.ok().build();
     }
 }

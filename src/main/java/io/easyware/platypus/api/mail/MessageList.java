@@ -8,7 +8,7 @@ public class MessageList {
 
     private int page;
     private int pages;
-    private ArrayList<MessageListEntry> messages;
+    private ArrayList<Message> messages;
 
     public int getPage() {
         return page;
@@ -26,11 +26,11 @@ public class MessageList {
         this.pages = pages;
     }
 
-    public ArrayList<MessageListEntry> getMessages() {
+    public ArrayList<Message> getMessages() {
         return messages;
     }
 
-    public void setMessages(ArrayList<MessageListEntry> messages) {
+    public void setMessages(ArrayList<Message> messages) {
         this.messages = messages;
     }
 }

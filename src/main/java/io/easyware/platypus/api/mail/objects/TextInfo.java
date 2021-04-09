@@ -7,6 +7,14 @@ public class TextInfo {
     private String id;
     private EncodedSize encodedSize;
 
+    @Override
+    public String toString() {
+        return "TextInfo{" +
+                "id='" + id + '\'' +
+                ", encodedSize=" + encodedSize +
+                '}';
+    }
+
     public String getId() {
         return id;
     }

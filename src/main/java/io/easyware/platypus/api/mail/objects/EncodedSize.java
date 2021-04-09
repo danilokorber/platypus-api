@@ -7,6 +7,14 @@ public class EncodedSize {
     private float plain;
     private float html;
 
+    @Override
+    public String toString() {
+        return "EncodedSize{" +
+                "plain=" + plain +
+                ", html=" + html +
+                '}';
+    }
+
     public float getPlain() {
         return plain;
     }

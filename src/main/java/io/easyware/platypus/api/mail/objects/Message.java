@@ -29,6 +29,33 @@ public class Message {
     private ArrayList<Attachment> attachments;
     private TextInfo text;
 
+    @Override
+    public String toString() {
+        return "Message{" +
+                "id='" + id + '\'' +
+                ", uid=" + uid +
+                ", emailId='" + emailId + '\'' +
+                ", threadId='" + threadId + '\'' +
+                ", date=" + date +
+                ", draft=" + draft +
+                ", unseen=" + unseen +
+                ", flagged=" + flagged +
+                ", size=" + size +
+                ", subject='" + subject + '\'' +
+                ", from=" + from +
+                ", replyTo=" + replyTo +
+                ", sender=" + sender +
+                ", to=" + to +
+                ", cc=" + cc +
+                ", bcc=" + bcc +
+                ", messageId='" + messageId + '\'' +
+                ", inReplyTo='" + inReplyTo + '\'' +
+                ", labels=" + labels +
+                ", attachments=" + attachments +
+                ", text=" + text +
+                '}';
+    }
+
     public String getId() {
         return id;
     }

@@ -11,6 +11,18 @@ public class Attachment {
     private boolean inline;
     private String contentId;
 
+    @Override
+    public String toString() {
+        return "{" +
+                "id='" + id + '\'' +
+                ", contentType='" + contentType + '\'' +
+                ", encodedSize=" + encodedSize +
+                ", embedded=" + embedded +
+                ", inline=" + inline +
+                ", contentId='" + contentId + '\'' +
+                '}';
+    }
+
     public String getId() {
         return id;
     }

@@ -10,6 +10,15 @@ public class MessageList {
     private int pages;
     private ArrayList<Message> messages;
 
+    @Override
+    public String toString() {
+        return "MessageList{" +
+                "page=" + page +
+                ", pages=" + pages +
+                ", messages=" + messages +
+                '}';
+    }
+
     public int getPage() {
         return page;
     }

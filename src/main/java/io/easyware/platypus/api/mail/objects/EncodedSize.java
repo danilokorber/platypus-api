@@ -1,4 +1,4 @@
-package io.easyware.platypus.api.mail;
+package io.easyware.platypus.api.mail.objects;
 
 public class EncodedSize {
 

@@ -1,8 +1,7 @@
-package io.easyware.platypus.api.mail;
+package io.easyware.platypus.api.mail.objects;
 
 import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 public class Message {
 

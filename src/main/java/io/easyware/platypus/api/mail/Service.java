@@ -1,5 +1,6 @@
 package io.easyware.platypus.api.mail;
 
+import io.easyware.platypus.api.mail.objects.MessageList;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 
 import javax.ws.rs.*;

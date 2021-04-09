@@ -11,6 +11,8 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import java.util.ArrayList;
 
+import static io.easyware.platypus.shared.Common.toArrayList;
+
 @Path("/mail")
 @Consumes(MediaType.APPLICATION_JSON)
 @Produces(MediaType.APPLICATION_JSON)
@@ -20,29 +22,59 @@ public class Api {
     @RestClient
     Service service;
 
-    @GET
-    @Produces(MediaType.APPLICATION_JSON)
-    public Response get() {
-        MessageList messages = service.get("Danilo", "Inbox");
-        System.out.println(messages.toString());
-        return Response.ok().entity(messages).build();
-        //return Response.ok().entity("OK").build();
+    public ArrayList<Message> getMessages(String account, @DefaultValue("Inbox") String path,  @DefaultValue("false") boolean unreadOnly) {
+        ArrayList<Message> messages = service.get(account, path).getMessages();
+        return unreadOnly ? toArrayList(messages.stream().filter(message -> message.isUnseen())) : messages;
     }
 
+    // GET /webhook
     @POST
     @Path("/webhook")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response webhook(WebhookMessage webhookMessage) {
-
-        System.out.println("New message from in " + webhookMessage.getSpecialUse() + " for " + webhookMessage.getData().getFrom().getAddress());
         if (webhookMessage.getSpecialUse().contains("\\All")) {
-            System.out.print("Checking still unread messages.... ");
             MessageList messages = service.get(webhookMessage.getAccount(), webhookMessage.getPath());
             long unreadMessages = messages.getMessages().stream().filter(message -> message.isUnseen()).count();
-            System.out.println(unreadMessages + " unread messages found.");
         }
-
         return Response.ok().build();
     }
+
+    // GET /{account}/messages
+    @GET
+    @Path("/{account}/messages")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getAccountMessages(@PathParam("account") String account, @DefaultValue("Inbox") @QueryParam("path") String path) {
+        ArrayList<Message> messages = getMessages(account, path, false);
+        return Response.ok().entity(messages).build();
+    }
+
+    // GET /{account}/messages/count
+    @GET
+    @Path("/{account}/messages/count")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getAccountMessagesCount(@PathParam("account") String account, @DefaultValue("Inbox") @QueryParam("path") String path) {
+        ArrayList<Message> unreadMessages = getMessages(account, path, false);
+        return Response.ok().entity(unreadMessages.size()).build();
+    }
+
+    // GET /{account}/messages/unread
+    @GET
+    @Path("/{account}/messages/unread")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getAccountMessagesUnread(@PathParam("account") String account, @DefaultValue("Inbox") @QueryParam("path") String path) {
+        ArrayList<Message> unreadMessages = getMessages(account, path, true);
+        return Response.ok().entity(unreadMessages).build();
+    }
+
+    // GET /{account}/messages/unread/count
+    @GET
+    @Path("/{account}/messages/unread/count")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response getAccountMessagesUnreadCount(@PathParam("account") String account, @DefaultValue("Inbox") @QueryParam("path") String path) {
+        ArrayList<Message> unreadMessages = getMessages(account, path, true);
+        return Response.ok().entity(unreadMessages.size()).build();
+    }
+
+
 }

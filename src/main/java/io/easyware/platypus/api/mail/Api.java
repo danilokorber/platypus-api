@@ -1,5 +1,7 @@
 package io.easyware.platypus.api.mail;
 
+import io.easyware.platypus.api.mail.objects.MessageList;
+import io.easyware.platypus.api.mail.objects.WebhookMessage;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
 import javax.inject.Inject;

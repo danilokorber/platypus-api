@@ -1,5 +1,5 @@
 {
-  "name": "platypus",
+  "name": "platypus-api",
   "version": "1.0.0",
   "jenkins": {
     "dns": {

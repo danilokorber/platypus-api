@@ -1,5 +1,6 @@
 package io.easyware.platypus.api.mail;
 
+import io.easyware.platypus.api.mail.objects.Message;
 import io.easyware.platypus.api.mail.objects.MessageList;
 import io.easyware.platypus.api.mail.objects.WebhookMessage;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
@@ -8,6 +9,7 @@ import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.util.ArrayList;
 
 @Path("/mail")
 @Consumes(MediaType.APPLICATION_JSON)
@@ -32,7 +34,14 @@ public class Api {
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     public Response webhook(WebhookMessage webhookMessage) {
-        System.out.println(webhookMessage.getData().toString());
+
+        System.out.println("New message from " + webhookMessage.getData().getFrom().getAddress());
+        System.out.println("Special use " + webhookMessage.getSpecialUse());
+        if (webhookMessage.getSpecialUse() == "\\All") {
+            MessageList messages = service.get(webhookMessage.getAccount(), webhookMessage.getPath());
+            long unreadMessages = messages.getMessages().stream().filter(message -> message.isUnseen()).count();
+            System.out.println(unreadMessages + " unread messages.");
+        }
         return Response.ok().build();
     }
 }

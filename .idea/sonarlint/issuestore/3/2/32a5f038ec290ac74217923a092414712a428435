@@ -1,4 +1,7 @@
 
-]	java:S125"<This block of commented-out lines of code should be removed.(éš²‘ıÿÿÿÿ8‚Ò¾‘‹/
-Z	java:S106!"9Replace this use of System.out or System.err by a logger.(€½áÇıÿÿÿÿ8Åá¸“‹/
-T	java:S106"9Replace this use of System.out or System.err by a logger.(¥ëG8å°¾‘‹/
+U
+java:S1481&"3Remove this unused "unreadMessages" local variable.(ÑÉÙÊÿÿÿÿÿ8°Ò—µ‹/
+d
+java:S1854&"BRemove this useless assignment to local variable "unreadMessages".(ÑÉÙÊÿÿÿÿÿ8°Ò—µ‹/
+’
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÃØâûÿÿÿÿ8…²†¶‹/

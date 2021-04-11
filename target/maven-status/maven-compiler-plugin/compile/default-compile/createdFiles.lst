@@ -1,5 +1,4 @@
 io/easyware/platypus/api/mail/objects/MessageList.class
-io/easyware/platypus/api/projects/objects/Project.class
 io/easyware/platypus/api/mail/objects/Address.class
 io/easyware/platypus/shared/Common.class
 io/easyware/platypus/api/mail/objects/TextInfo.class
@@ -9,5 +8,7 @@ io/easyware/platypus/api/mail/objects/Attachment.class
 io/easyware/platypus/api/projects/Api.class
 io/easyware/platypus/api/mail/Api.class
 io/easyware/platypus/api/mail/objects/EncodedSize.class
+META-INF/panache-archive.marker
 io/easyware/platypus/api/projects/Service.class
+io/easyware/platypus/api/projects/Repository.class
 io/easyware/platypus/api/mail/objects/WebhookMessage.class

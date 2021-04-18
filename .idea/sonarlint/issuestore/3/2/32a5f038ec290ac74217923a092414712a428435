@@ -1,7 +1,18 @@
 
-U
-java:S1481&"3Remove this unused "unreadMessages" local variable.(ÑÉÙÊÿÿÿÿÿ8°Ò—µ‹/
-d
-java:S1854&"BRemove this useless assignment to local variable "unreadMessages".(ÑÉÙÊÿÿÿÿÿ8°Ò—µ‹/
+N
+java:S1612/",Replace this lambda with a method reference.(ÑÉÙÊÿÿÿÿÿ8ŒÐÉºŒ/
+}
+java:S1488#"`Immediately return this expression instead of assigning it to the temporary variable "messages".(Ô™ˆ8Ë‰Ââ/
 ’
-java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÃØâûÿÿÿÿ8…²†¶‹/
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÃØâûÿÿÿÿ8…²†¶‹/
+d
+java:S1854/"BRemove this useless assignment to local variable "unreadMessages".(ÑÉÙÊÿÿÿÿÿ8°Ò—µ‹/
+Œ
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(é¿¯38¶úˆâ/
+I
+java:S1612",Replace this lambda with a method reference.(Å¢¤Î8ŒÐÉºŒ/
+]	java:S125>"<This block of commented-out lines of code should be removed.(Âòè—üÿÿÿÿ8¯›€â/
+M
+java:S1172"1Remove this unused method parameter "unreadOnly".(é¿¯38Ë‰Ââ/
+U
+java:S1481/"3Remove this unused "unreadMessages" local variable.(ÑÉÙÊÿÿÿÿÿ8°Ò—µ‹/

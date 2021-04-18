@@ -1,5 +1,7 @@
 package io.easyware.platypus.api.mail.objects;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -26,7 +28,7 @@ public class Message {
     private String messageId;
     private String inReplyTo;
     private ArrayList<String> labels;
-    private ArrayList<Attachment> attachments;
+    private ArrayList<Attachment> attachments = new ArrayList<>();
     private TextInfo text;
 
     @Override
@@ -198,6 +200,10 @@ public class Message {
 
     public void setAttachments(ArrayList<Attachment> attachments) {
         this.attachments = attachments;
+    }
+
+    public boolean hasAttachments() {
+        return this.attachments.isEmpty() ? false : true;
     }
 
     public TextInfo getText() {

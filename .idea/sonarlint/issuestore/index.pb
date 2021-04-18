@@ -37,3 +37,9 @@ t
 Dsrc/main/java/io/easyware/platypus/api/projects/objects/Project.java,0/2/025e40151f5d09acec5e8d5adfa8ff9605ca4190
 o
 ?src/main/java/io/easyware/platypus/api/projects/Repository.java,b/d/bd499a4bce36edce3f6fdb22e20b6adca372f7c8
+o
+?src/main/java/io/easyware/platypus/api/mail/objects/Thread.java,5/f/5f6ae285666e9ce649383d0eef8f86e115d2fd96
+g
+7src/main/java/io/easyware/platypus/api/mail/Helper.java,7/4/7483833af354461f0c4394d026c9aebe47e38c8d
+s
+Csrc/main/java/io/easyware/platypus/api/mail/objects/SearchBody.java,f/d/fdf563ec659f13d15db0273dc99d46850284cd15

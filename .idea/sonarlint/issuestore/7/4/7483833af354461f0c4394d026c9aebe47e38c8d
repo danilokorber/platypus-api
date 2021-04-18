@@ -1,0 +1,17 @@
+
+H
+java:S1068
+"+Remove this unused "threads" private field.(îèİ®8İ¼³æŒ/
+F
+java:S1905")Remove this unnecessary cast to "Thread".(´§­Ä8üÒ¹/
+’
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(’ğ„Ãşÿÿÿÿ8üÒ¹/
+v
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(¨¤±²8üÒ¹/
+X	java:S125'"<This block of commented-out lines of code should be removed.(ÉÛ—8ğí‚º/
+]
+java:S1117";Rename "threads" which hides the field declared at line 10.(…½¶âşÿÿÿÿ8üÒ¹/
+{
+java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(…½¶âşÿÿÿÿ8üÒ¹/
+•
+java:S1319"sThe type of the "messages" object should be an interface such as "List" rather than the implementation "ArrayList".(’ğ„Ãşÿÿÿÿ8üÒ¹/

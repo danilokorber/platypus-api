@@ -43,3 +43,9 @@ g
 7src/main/java/io/easyware/platypus/api/mail/Helper.java,7/4/7483833af354461f0c4394d026c9aebe47e38c8d
 s
 Csrc/main/java/io/easyware/platypus/api/mail/objects/SearchBody.java,f/d/fdf563ec659f13d15db0273dc99d46850284cd15
+m
+=src/main/java/io/easyware/platypus/api/mail/objects/Text.java,a/5/a5eedf1d2dffb51109f43eb81f2f2811d4dae984
+v
+Fsrc/main/java/io/easyware/platypus/api/mail/objects/MessageUpdate.java,9/f/9f50b9bbacc0ceceb54e91bab503dce31b18b414
+|
+Lsrc/main/java/io/easyware/platypus/api/mail/objects/MessageUpdateParams.java,3/e/3e7360e6378cf0e4abea37fd10b3c8aa3f124aa0

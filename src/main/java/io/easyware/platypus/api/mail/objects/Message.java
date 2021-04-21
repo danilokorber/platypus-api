@@ -1,7 +1,11 @@
 package io.easyware.platypus.api.mail.objects;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
+import org.hibernate.type.LocalDateType;
 
+import javax.json.bind.annotation.JsonbDateFormat;
+import java.time.LocalDateTime;
+import java.time.ZoneOffset;
 import java.util.ArrayList;
 import java.util.Date;
 
@@ -13,7 +17,7 @@ public class Message {
     private float uid;
     private String emailId;
     private String threadId;
-    private Date date;
+    private Date date = new Date(0);
     private boolean draft;
     private boolean unseen;
     private boolean flagged;

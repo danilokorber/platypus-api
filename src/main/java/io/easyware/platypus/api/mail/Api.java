@@ -24,9 +24,10 @@ public class Api {
     Helper helper = new Helper();
 
     public ArrayList<Message> getMessages(String account, @DefaultValue("Inbox") String path,  @DefaultValue("false") boolean unreadOnly) {
-        ArrayList<Message> messages = service.get(account, path).getMessages();
+        ArrayList<Message> messages = service.get(account, path, 1000).getMessages();
         return unreadOnly ? toArrayList(messages.stream().filter(message -> message.isUnseen())) : messages;
     }
+
     public ArrayList<Message> getMessagesFromThread(String account, String threadId, @DefaultValue("[Gmail]/Todos os e-mails") String path,  @DefaultValue("false") boolean unreadOnly) {
         SearchBody.Filters filter = new SearchBody.Filters();
         filter.threadId = threadId;
@@ -43,7 +44,7 @@ public class Api {
     @Produces(MediaType.APPLICATION_JSON)
     public Response webhook(WebhookMessage webhookMessage) {
         if (webhookMessage.getSpecialUse().contains("\\All")) {
-            MessageList messages = service.get(webhookMessage.getAccount(), webhookMessage.getPath());
+            MessageList messages = service.get(webhookMessage.getAccount(), webhookMessage.getPath(), 1000);
             long unreadMessages = messages.getMessages().stream().filter(message -> message.isUnseen()).count();
         }
         return Response.ok().build();
@@ -77,6 +78,26 @@ public class Api {
         return Response.ok().entity(messages).build();
     }
 
+    // PUT /{account}/messages/{emailId}
+    @PUT
+    @Path("/{account}/messages/{emailId}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response markAsReadAccountMessages(@PathParam("account") String account, @PathParam("emailId") String emailId) {
+        MessageUpdateParams params = new MessageUpdateParams();
+        params.addAdd("\\Seen");
+        MessageUpdate body = new MessageUpdate();
+        body.setFlags(params);
+        return Response.ok().entity(service.change(account, emailId, body)).build();
+    }
+
+    // DELETE /{account}/messages/{emailId}
+    @DELETE
+    @Path("/{account}/messages/{emailId}")
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response deleteAccountMessages(@PathParam("account") String account, @PathParam("emailId") String emailId) {
+        return Response.ok().entity(service.delete(account, emailId)).build();
+    }
+
     // GET /{account}/messages/text/{textId}
     @GET
     @Path("/{account}/messages/text/{textId}")
@@ -86,13 +107,13 @@ public class Api {
         return Response.ok().entity(text.getPlain()).build();
     }
 
-    // GET /{account}/messages/text/{textId}
+    // GET /{account}/messages/html/{textId}
     @GET
     @Path("/{account}/messages/html/{textId}")
     @Produces(MediaType.TEXT_HTML)
     public Response getAccountMessageHtml(@PathParam("account") String account, @PathParam("textId") String textId) {
         Text text = service.getText(account, textId);
-        return Response.ok().entity(text.getHtml()).build();
+        return Response.ok().entity(text.getHtml().replaceAll(" href=\""," target=\"_blank\" href=\"")).build();
     }
 
     // GET /{account}/messages/count

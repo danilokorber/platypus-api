@@ -15,6 +15,7 @@ pipeline {
 	environment {
         CRED_NEXUS = credentials('easywareNexusAdmin')
 		CRED_SONAR = credentials('easywareSonarJenkins')
+		CRED_MYSQL = credentials('easywareMysqlPlatypus')
     }
 
 	stages {
@@ -109,6 +110,8 @@ pipeline {
 					sh """docker run -d \
 					                 --network ${props.jenkins.docker.network} \
 					                 --name ${props.name} \
+					                 -e MYSQL_USR=${CRED_MYSQL_USR} \
+					                 -e MYSQL_PWD=${CRED_MYSQL_PSW} \
 									 --label-file ${props.jenkins.docker.labels} \
 									 ${props.jenkins.nexus.imageGroup}/${props.name}"""
 					sh "rm ${props.jenkins.docker.labels}"

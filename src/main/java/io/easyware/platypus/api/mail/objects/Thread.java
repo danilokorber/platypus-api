@@ -3,6 +3,8 @@ package io.easyware.platypus.api.mail.objects;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.databind.annotation.JsonSerialize;
 
+import javax.json.bind.annotation.JsonbDateFormat;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Date;
@@ -51,9 +53,7 @@ public class Thread {
         this.subject = subject;
     }
 
-    public Date getDate() {
-        return date;
-    }
+    public Date getDate() { return date; }
 
     public void setDate(Date date) { this.date = date.after(this.date) ? date : this.date; }
 

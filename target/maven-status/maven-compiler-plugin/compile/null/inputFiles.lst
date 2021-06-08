@@ -12,9 +12,11 @@
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/projects/Repository.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/projects/Api.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/MessageUpdate.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/dyndns/Api.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/Thread.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/Service.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/projects/objects/Project.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/users/Api.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/TextInfo.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/Attachment.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/WebhookMessage.java

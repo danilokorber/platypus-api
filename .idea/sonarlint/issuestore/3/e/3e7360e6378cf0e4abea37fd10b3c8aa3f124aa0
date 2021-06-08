@@ -1,19 +1,19 @@
 
+‹
+java:S1319%"nThe type of the "set" object should be an interface such as "List" rather than the implementation "ArrayList".(…½İ¢8¤¶Ş/
 ’
 java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(Ş¨ƒ¨ûÿÿÿÿ8¤¶Ş/
+’
+java:S1319!"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÈÒéøÿÿÿÿ8¤¶Ş/
+‹
+java:S1319"nThe type of the "add" object should be an interface such as "List" rather than the implementation "ArrayList".(§Å‚º8¤¶Ş/
 v
 java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(´Í­8¤ÀóŞ/
 ’
-java:S1319!"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ÈÒéøÿÿÿÿ8¤¶Ş/
+java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(–ß®ùÿÿÿÿ8¤¶Ş/
+
+java:S1319"qThe type of the "delete" object should be an interface such as "List" rather than the implementation "ArrayList".(ú«êô8¤¶Ş/
 v
 java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(à¸ìñ8óçóŞ/
 {
 java:S2293"YReplace the type specification in this constructor call with the diamond operator ("<>").(ÿ«ÓÎşÿÿÿÿ8óçóŞ/
-‹
-java:S1319%"nThe type of the "set" object should be an interface such as "List" rather than the implementation "ArrayList".(…½İ¢8¤¶Ş/
-
-java:S1319"qThe type of the "delete" object should be an interface such as "List" rather than the implementation "ArrayList".(ú«êô8¤¶Ş/
-‹
-java:S1319"nThe type of the "add" object should be an interface such as "List" rather than the implementation "ArrayList".(§Å‚º8¤¶Ş/
-’
-java:S1319"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(–ß®ùÿÿÿÿ8¤¶Ş/

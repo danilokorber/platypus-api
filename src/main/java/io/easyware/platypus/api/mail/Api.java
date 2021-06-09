@@ -25,12 +25,12 @@ public class Api {
 
     @Inject
     @RestClient
-    Service service;
+    ImapService imapService;
 
     Helper helper = new Helper();
 
     public ArrayList<Message> getMessages(String account, @DefaultValue("Inbox") String path,  @DefaultValue("false") boolean unreadOnly) {
-        ArrayList<Message> messages = service.get(account, path, 1000).getMessages();
+        ArrayList<Message> messages = imapService.get(account, path, 1000).getMessages();
         return unreadOnly ? toArrayList(messages.stream().filter(message -> message.isUnseen())) : messages;
     }
 
@@ -39,7 +39,7 @@ public class Api {
         filter.threadId = threadId;
         SearchBody body = new SearchBody();
         body.search = filter;
-        ArrayList<Message> messages = service.search(account, path, body).getMessages();
+        ArrayList<Message> messages = imapService.search(account, path, body).getMessages();
         return messages;
     }
 
@@ -50,7 +50,7 @@ public class Api {
     @Produces(MediaType.APPLICATION_JSON)
     public Response webhook(WebhookMessage webhookMessage) {
         if (webhookMessage.getSpecialUse().contains("\\All")) {
-            MessageList messages = service.get(webhookMessage.getAccount(), webhookMessage.getPath(), 1000);
+            MessageList messages = imapService.get(webhookMessage.getAccount(), webhookMessage.getPath(), 1000);
             long unreadMessages = messages.getMessages().stream().filter(message -> message.isUnseen()).count();
         }
         return Response.ok().build();
@@ -93,7 +93,7 @@ public class Api {
         params.addAdd("\\Seen");
         MessageUpdate body = new MessageUpdate();
         body.setFlags(params);
-        return Response.ok().entity(service.change(account, emailId, body)).build();
+        return Response.ok().entity(imapService.change(account, emailId, body)).build();
     }
 
     // DELETE {account}/messages/{emailId}
@@ -101,7 +101,7 @@ public class Api {
     @Path("{account}/messages/{emailId}")
     @Produces(MediaType.APPLICATION_JSON)
     public Response deleteAccountMessages(@PathParam("account") String account, @PathParam("emailId") String emailId) {
-        return Response.ok().entity(service.delete(account, emailId)).build();
+        return Response.ok().entity(imapService.delete(account, emailId)).build();
     }
 
     // GET {account}/messages/text/{textId}
@@ -109,7 +109,7 @@ public class Api {
     @Path("{account}/messages/text/{textId}")
     @Produces(MediaType.TEXT_PLAIN)
     public Response getAccountMessageText(@PathParam("account") String account, @PathParam("textId") String textId) {
-        Text text = service.getText(account, textId);
+        Text text = imapService.getText(account, textId);
         return Response.ok().entity(text.getPlain()).build();
     }
 
@@ -118,7 +118,7 @@ public class Api {
     @Path("{account}/messages/html/{textId}")
     @Produces(MediaType.TEXT_HTML)
     public Response getAccountMessageHtml(@PathParam("account") String account, @PathParam("textId") String textId) {
-        Text text = service.getText(account, textId);
+        Text text = imapService.getText(account, textId);
         return Response.ok().entity(text.getHtml().replaceAll(" href=\""," target=\"_blank\" href=\"")).build();
     }
 

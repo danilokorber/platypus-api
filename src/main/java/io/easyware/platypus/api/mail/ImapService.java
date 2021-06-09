@@ -5,7 +5,6 @@ import io.easyware.platypus.api.mail.objects.MessageUpdate;
 import io.easyware.platypus.api.mail.objects.SearchBody;
 import io.easyware.platypus.api.mail.objects.Text;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
-import org.jboss.resteasy.annotations.Body;
 import org.jboss.resteasy.annotations.providers.multipart.MultipartForm;
 
 import javax.ws.rs.*;
@@ -13,7 +12,7 @@ import javax.ws.rs.core.MediaType;
 
 @Path("account")
 @RegisterRestClient(configKey = "imap")
-public interface Service {
+public interface ImapService {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)

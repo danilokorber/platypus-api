@@ -9,12 +9,8 @@ p
 @src/main/java/io/easyware/platypus/api/mail/objects/Message.java,d/c/dcf12897a6e04293416e46f9dca078a1e0f77630
 w
 Gsrc/main/java/io/easyware/platypus/api/mail/objects/WebhookMessage.java,5/e/5e5d384bf9e4093da784189d7cfb7b3eeed9f74c
-p
-@src/main/java/io/easyware/platypus/api/mail/objects/Address.java,c/6/c60f00196c0db424d1a5f1ecac923795afb79f5f
 e
 5src/main/java/io/easyware/platypus/shared/Common.java,d/9/d97408bc4031b95e6523a8adad99c502973780e6
-t
-Dsrc/main/java/io/easyware/platypus/api/mail/objects/MessageList.java,4/a/4a5ddc5da5d95bed91d08a9a3cdf36654ddca780
 m
 =src/main/java/io/easyware/platypus/api/mail/objects/Text.java,a/5/a5eedf1d2dffb51109f43eb81f2f2811d4dae984
 v
@@ -33,8 +29,6 @@ t
 Dsrc/main/java/io/easyware/platypus/api/mail/objects/EncodedSize.java,c/a/caa945192b3d94423117f55cfd8eb6702e63bce7
 9
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-e
-5src/main/java/io/easyware/platypus/api/users/Api.java,8/7/876a24198db7cc39fea4a126b358a9a7675d5971
 o
 ?src/main/java/io/easyware/platypus/api/projects/Repository.java,b/d/bd499a4bce36edce3f6fdb22e20b6adca372f7c8
 t
@@ -43,5 +37,3 @@ l
 <src/main/java/io/easyware/platypus/api/projects/Service.java,d/0/d0821bd9e48799e6388722e074e58e26dcc7d276
 4
 .env,3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
-g
-7src/main/java/io/easyware/platypus/api/mail/Helper.java,7/4/7483833af354461f0c4394d026c9aebe47e38c8d

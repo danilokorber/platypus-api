@@ -43,3 +43,7 @@ l
 <src/main/java/io/easyware/platypus/api/projects/Service.java,d/0/d0821bd9e48799e6388722e074e58e26dcc7d276
 h
 8src/main/java/io/easyware/platypus/api/projects/Api.java,2/f/2ffb980bfb039eaf2a6e6fe70025cda1034ea2bc
+4
+.env,3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
+g
+7src/main/java/io/easyware/platypus/api/mail/Helper.java,7/4/7483833af354461f0c4394d026c9aebe47e38c8d

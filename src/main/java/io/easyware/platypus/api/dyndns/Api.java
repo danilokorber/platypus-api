@@ -6,6 +6,7 @@ import io.easyware.platypus.api.mail.objects.MessageList;
 import io.easyware.platypus.api.mail.objects.WebhookMessage;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
+import javax.annotation.security.PermitAll;
 import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
@@ -23,6 +24,7 @@ public class Api {
     Service service;
 
     @GET
+    @PermitAll
     @Path("update")
     public Response update(@QueryParam("ipaddr") String ipaddr, @QueryParam("domain") String domain) {
         LOGGER.log(Level.INFO, ipaddr);

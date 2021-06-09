@@ -41,8 +41,6 @@ t
 Dsrc/main/java/io/easyware/platypus/api/projects/objects/Project.java,0/2/025e40151f5d09acec5e8d5adfa8ff9605ca4190
 l
 <src/main/java/io/easyware/platypus/api/projects/Service.java,d/0/d0821bd9e48799e6388722e074e58e26dcc7d276
-h
-8src/main/java/io/easyware/platypus/api/projects/Api.java,2/f/2ffb980bfb039eaf2a6e6fe70025cda1034ea2bc
 4
 .env,3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
 g

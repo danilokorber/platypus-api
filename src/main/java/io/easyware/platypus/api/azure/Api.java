@@ -48,7 +48,7 @@ public class Api {
                     "korber",
                     "korber.com.br",
                     "A",
-                    domain,
+                    hostname,
                     authorization,
                     body,
                     "2018-05-01");

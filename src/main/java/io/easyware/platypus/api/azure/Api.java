@@ -3,10 +3,8 @@ package io.easyware.platypus.api.azure;
 import io.easyware.platypus.api.azure.objects.auth.TokenRequestBody;
 import io.easyware.platypus.api.azure.objects.auth.TokenResponseBody;
 import io.easyware.platypus.api.azure.objects.dns.RequestBody;
-import io.easyware.platypus.api.azure.objects.dns.ResponseBody;
 import org.eclipse.microprofile.rest.client.inject.RestClient;
 
-import javax.annotation.security.PermitAll;
 import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;

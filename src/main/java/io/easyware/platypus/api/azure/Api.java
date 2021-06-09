@@ -32,7 +32,10 @@ public class Api {
     @Path("update")
     @Produces(MediaType.APPLICATION_JSON)
     public Response update(@QueryParam("ipaddr") String ipaddr, @QueryParam("domain") String domain) {
-        RequestBody body = new RequestBody(domain, ipaddr);
+        String[] array = domain.split("\\.", -1);
+        String hostname = array[0];
+
+        RequestBody body = new RequestBody(hostname, ipaddr);
 
         LOGGER.log(Level.INFO, "Generating token");
         TokenResponseBody tokenBody = authService.newToken("24c36f42-0890-4308-ba58-fc1b16511794", new TokenRequestBody().getBody());

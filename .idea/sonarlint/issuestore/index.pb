@@ -84,11 +84,3 @@ h
 8src/main/java/io/easyware/platypus/api/projects/Api.java,2/f/2ffb980bfb039eaf2a6e6fe70025cda1034ea2bc
 d
 4src/main/java/io/easyware/platypus/api/mail/Api.java,3/2/32a5f038ec290ac74217923a092414712a428435
-r
-Bsrc/main/java/io/easyware/platypus/api/invitations/Repository.java,2/e/2e69e4954afae7c51fae391cffe5d8d5756f6901
-z
-Jsrc/main/java/io/easyware/platypus/api/invitations/objects/Invitation.java,e/a/ea63b50e587e5bfd483769f66b4eb86622f9fea2
-k
-;src/main/java/io/easyware/platypus/api/invitations/Api.java,2/3/23648d81279c320f1d09454c71f6ecbe73c9ea10
-o
-?src/main/java/io/easyware/platypus/api/invitations/Service.java,d/d/dd1a0a0e52df9d760deb3140058a77e48a8b4a39

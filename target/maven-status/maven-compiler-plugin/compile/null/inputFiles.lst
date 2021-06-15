@@ -4,9 +4,15 @@
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/Address.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/azure/objects/dns/ResponseBody.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/SearchBody.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/domains/Repository.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/azure/objects/auth/TokenRequestBody.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/MessageUpdate.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/domains/Service.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/projects/objects/Project.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/invitations/Service.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/invitations/objects/Invitation.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/domains/objects/Domain.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/invitations/Repository.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/Helper.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/MessageUpdateParams.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/projects/Service.java
@@ -15,6 +21,8 @@
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/Text.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/Message.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/EncodedSize.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/invitations/Api.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/domains/Api.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/Api.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/azure/Api.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/projects/Repository.java

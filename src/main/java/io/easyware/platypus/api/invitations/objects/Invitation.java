@@ -30,6 +30,11 @@ public class Invitation {
     private String event;
 
     @NotBlank
+    @Size(max=10)
+    @Column(name = "event_id")
+    private String eventId;
+
+    @NotBlank
     @Size(max=20)
     private String name;
 
@@ -68,6 +73,14 @@ public class Invitation {
         this.event = event;
     }
 
+    public String getEventId() {
+        return eventId;
+    }
+
+    public void setEventId(String eventId) {
+        this.eventId = eventId;
+    }
+
     public String getName() {
         return name;
     }
@@ -76,7 +89,7 @@ public class Invitation {
         this.name = name;
     }
 
-    public Boolean isHasConfirmed() {
+    public Boolean getHasConfirmed() {
         return hasConfirmed;
     }
 

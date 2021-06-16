@@ -42,8 +42,6 @@ t
 Dsrc/main/java/io/easyware/platypus/api/mail/objects/MessageList.java,4/a/4a5ddc5da5d95bed91d08a9a3cdf36654ddca780
 g
 7src/main/java/io/easyware/platypus/api/mail/Helper.java,7/4/7483833af354461f0c4394d026c9aebe47e38c8d
-l
-<src/main/java/io/easyware/platypus/api/mail/ImapService.java,e/1/e14aea1abc65dcdc60edd2fc3d3ec9d70cb8bd20
 v
 Fsrc/main/java/io/easyware/platypus/api/azure/objects/dns/Metadata.java,8/8/880f851cce7d49f1b893272ab4ac54a38c8d76cd
 u
@@ -74,8 +72,6 @@ n
 >src/main/java/io/easyware/platypus/api/domains/Repository.java,7/6/76e8a3512a5db370a37e7a974bbe29418f2dfcf6
 m
 =src/main/java/io/easyware/platypus/api/azure/AuthService.java,5/4/549865fe85c77194cfc135fda920277a2d2440eb
-l
-<src/main/java/io/easyware/platypus/api/projects/Service.java,d/0/d0821bd9e48799e6388722e074e58e26dcc7d276
 k
 ;src/main/java/io/easyware/platypus/api/domains/Service.java,2/2/223a634b41f8353372cd83d1f628ab13de9fa9c9
 g
@@ -84,3 +80,15 @@ h
 8src/main/java/io/easyware/platypus/api/projects/Api.java,2/f/2ffb980bfb039eaf2a6e6fe70025cda1034ea2bc
 d
 4src/main/java/io/easyware/platypus/api/mail/Api.java,3/2/32a5f038ec290ac74217923a092414712a428435
+l
+<src/main/java/io/easyware/platypus/api/mail/ImapService.java,e/1/e14aea1abc65dcdc60edd2fc3d3ec9d70cb8bd20
+r
+Bsrc/main/java/io/easyware/platypus/api/invitations/Repository.java,2/e/2e69e4954afae7c51fae391cffe5d8d5756f6901
+z
+Jsrc/main/java/io/easyware/platypus/api/invitations/objects/Invitation.java,e/a/ea63b50e587e5bfd483769f66b4eb86622f9fea2
+k
+;src/main/java/io/easyware/platypus/api/invitations/Api.java,2/3/23648d81279c320f1d09454c71f6ecbe73c9ea10
+l
+<src/main/java/io/easyware/platypus/api/projects/Service.java,d/0/d0821bd9e48799e6388722e074e58e26dcc7d276
+o
+?src/main/java/io/easyware/platypus/api/invitations/Service.java,d/d/dd1a0a0e52df9d760deb3140058a77e48a8b4a39

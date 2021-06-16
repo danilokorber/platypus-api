@@ -29,4 +29,10 @@ public class Api {
     public Response postConfirmation(@PathParam("invitationId") String invitationId, @DefaultValue("false") @QueryParam("confirm") Boolean confirm) {
         return Response.accepted().entity(service.postConfirmation(invitationId, confirm)).build();
     }
+
+    @GET
+    @Path("event/{eventId}")
+    public Response getInvitationsFromEvent(@PathParam("eventId") String eventId) {
+        return Response.ok().entity(service.getInvitationsFrom(eventId)).build();
+    }
 }

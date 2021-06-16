@@ -9,8 +9,10 @@ import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriBuilder;
 import java.net.URI;
 import java.util.Date;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.stream.Collectors;
 
 @ApplicationScoped
 public class Service {
@@ -34,5 +36,9 @@ public class Service {
         invitation.setHasConfirmed(confirm);
         invitation.setUpdatedAt(new Date());
         return invitation;
+    }
+
+    public List<Invitation> getInvitationsFrom(String eventId) {
+        return repository.listAll().stream().filter(i -> i.getEventId().equals(eventId)).collect(Collectors.toList());
     }
 }

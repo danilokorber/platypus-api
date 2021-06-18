@@ -88,7 +88,3 @@ o
 ?src/main/java/io/easyware/platypus/api/invitations/Service.java,d/d/dd1a0a0e52df9d760deb3140058a77e48a8b4a39
 t
 Dsrc/main/java/io/easyware/platypus/api/projects/objects/Project.java,0/2/025e40151f5d09acec5e8d5adfa8ff9605ca4190
-k
-;src/main/java/io/easyware/platypus/api/domains/Service.java,2/2/223a634b41f8353372cd83d1f628ab13de9fa9c9
-g
-7src/main/java/io/easyware/platypus/api/domains/Api.java,e/4/e4247364f48f81872e0b0412aa45fa845723f74e

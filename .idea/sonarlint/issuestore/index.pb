@@ -1,8 +1,6 @@
 
 G
 config/sonar.properties,c/7/c7156e5d3dced778f4aca1554c3a062d71411681
-B
-config/Jenkinsfile,b/6/b6d0359779081f23c2f08ce9e9ea8d23040213f5
 D
 config/settings.json,e/3/e3357f6213a8bcc948d6ecbb1184e12f518c9598
 p
@@ -88,7 +86,3 @@ o
 ?src/main/java/io/easyware/platypus/api/invitations/Service.java,d/d/dd1a0a0e52df9d760deb3140058a77e48a8b4a39
 t
 Dsrc/main/java/io/easyware/platypus/api/projects/objects/Project.java,0/2/025e40151f5d09acec5e8d5adfa8ff9605ca4190
-g
-7src/main/java/io/easyware/platypus/api/domains/Api.java,e/4/e4247364f48f81872e0b0412aa45fa845723f74e
-k
-;src/main/java/io/easyware/platypus/api/domains/Service.java,2/2/223a634b41f8353372cd83d1f628ab13de9fa9c9

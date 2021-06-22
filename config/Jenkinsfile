@@ -82,14 +82,14 @@ pipeline {
 			}
 		}
 
-		stage("Create DNS record") {
-			steps{
-				script{
-					def azureCmd = "az network dns record-set cname set-record -g ${props.jenkins.dns.resourceGroup} -z ${props.jenkins.dns.domain} -n ${props.jenkins.dns.host} -c ${props.jenkins.dns.cname}"
-					sh "docker run dkorber/azure ${azureCmd}"
-				}
-			}
-		}
+// 		stage("Create DNS record") {
+// 			steps{
+// 				script{
+// 					def azureCmd = "az network dns record-set cname set-record -g ${props.jenkins.dns.resourceGroup} -z ${props.jenkins.dns.domain} -n ${props.jenkins.dns.host} -c ${props.jenkins.dns.cname}"
+// 					sh "docker run dkorber/azure ${azureCmd}"
+// 				}
+// 			}
+// 		}
 
 		stage("Prepare docker deployment") {
 			steps{

@@ -30,6 +30,7 @@ public class Api {
     @GET
     public Response getProjectsOfAccount() {
         LOGGER.log(Level.INFO, identity.getPrincipal().getName());
+        LOGGER.log(Level.INFO, identity.getRoles().toString());
         return Response.ok().entity(service.getDomainsFromAccount(identity)).build();
     }
 }

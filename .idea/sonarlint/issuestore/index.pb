@@ -86,3 +86,5 @@ o
 ?src/main/java/io/easyware/platypus/api/invitations/Service.java,d/d/dd1a0a0e52df9d760deb3140058a77e48a8b4a39
 t
 Dsrc/main/java/io/easyware/platypus/api/projects/objects/Project.java,0/2/025e40151f5d09acec5e8d5adfa8ff9605ca4190
+B
+config/Jenkinsfile,b/6/b6d0359779081f23c2f08ce9e9ea8d23040213f5

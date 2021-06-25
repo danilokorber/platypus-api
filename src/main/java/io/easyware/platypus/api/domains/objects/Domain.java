@@ -19,7 +19,7 @@ public class Domain {
     @Column(name = "id")
     private int id;
 
-    @NotBlank
+    //@NotBlank
     @Size(max=36)
     @Column(name = "uid")
     private String uid;
@@ -28,11 +28,11 @@ public class Domain {
     @Size(max=20)
     private String name;
 
-    @NotBlank
+    //@NotBlank
     @Column(name = "is_active")
     private boolean isActive;
 
-    @NotBlank
+    //@NotBlank
     @Column(name = "created_at")
     @JsonbDateFormat(value = "yyyy-MM-dd'T'HH:mm:ssXXX")
     private Date createdAt;
@@ -49,6 +49,20 @@ public class Domain {
     @Size(max=100)
     @Column(name = "updated_by")
     private String updatedBy;
+
+    @Override
+    public String toString() {
+        return "Domain{" +
+                "id=" + id +
+                ", uid='" + uid + '\'' +
+                ", name='" + name + '\'' +
+                ", isActive=" + isActive +
+                ", createdAt=" + createdAt +
+                ", createdBy='" + createdBy + '\'' +
+                ", updatedAt=" + updatedAt +
+                ", updatedBy='" + updatedBy + '\'' +
+                '}';
+    }
 
     public int getId() {
         return id;

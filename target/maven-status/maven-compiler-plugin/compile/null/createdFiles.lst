@@ -1,4 +1,5 @@
 io/easyware/platypus/api/azure/objects/dns/Metadata.class
+io/easyware/platypus/api/keycloak/objects/TokenRequestBody.class
 io/easyware/platypus/api/users/Api.class
 io/easyware/platypus/api/mail/objects/MessageUpdateParams.class
 io/easyware/platypus/api/mail/objects/MessageList.class
@@ -29,10 +30,13 @@ io/easyware/platypus/api/mail/objects/SearchBody$Filters.class
 io/easyware/platypus/api/azure/AuthService.class
 io/easyware/platypus/api/azure/Api.class
 io/easyware/platypus/api/azure/objects/auth/TokenResponseBody.class
+io/easyware/platypus/api/keycloak/objects/TokenResponseBody.class
+io/easyware/platypus/api/keycloak/KeycloakService.class
 io/easyware/platypus/api/azure/objects/dns/Properties.class
 io/easyware/platypus/api/domains/Api.class
 io/easyware/platypus/api/projects/Api.class
 io/easyware/platypus/api/mail/objects/SearchBody.class
+io/easyware/platypus/api/keycloak/objects/Role.class
 META-INF/panache-archive.marker
 io/easyware/platypus/api/projects/Service.class
 io/easyware/platypus/api/invitations/Repository.class

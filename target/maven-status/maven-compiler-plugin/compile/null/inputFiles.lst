@@ -1,9 +1,11 @@
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/azure/objects/dns/Properties.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/azure/objects/dns/RequestBody.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/shared/Common.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/keycloak/objects/Role.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/Address.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/azure/objects/dns/ResponseBody.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/SearchBody.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/keycloak/objects/TokenRequestBody.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/domains/Repository.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/azure/objects/auth/TokenRequestBody.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/MessageUpdate.java
@@ -13,6 +15,7 @@
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/invitations/objects/Invitation.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/domains/objects/Domain.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/invitations/Repository.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/keycloak/KeycloakService.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/Helper.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/MessageUpdateParams.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/projects/Service.java
@@ -30,6 +33,7 @@
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/azure/AuthService.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/Thread.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/users/Api.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/keycloak/objects/TokenResponseBody.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/azure/objects/dns/ARecord.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/TextInfo.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/Attachment.java

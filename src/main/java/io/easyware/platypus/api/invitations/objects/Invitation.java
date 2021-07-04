@@ -49,6 +49,10 @@ public class Invitation {
     @Column(name = "updated_by")
     private String updatedBy;
 
+    @NotBlank
+    @Column(name = "scans")
+    private int scans;
+
     public int getId() {
         return id;
     }
@@ -111,5 +115,13 @@ public class Invitation {
 
     public void setUpdatedBy(String updatedBy) {
         this.updatedBy = updatedBy;
+    }
+
+    public int getScans() {
+        return scans;
+    }
+
+    public void setScans(int scans) {
+        this.scans = scans;
     }
 }

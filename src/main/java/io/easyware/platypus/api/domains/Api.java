@@ -50,8 +50,14 @@ public class Api {
     }
 
     @GET
-    public Response getProjectsOfAccount() {
-        return Response.ok().entity(service.getAllFromAccount(identity)).build();
+    public Response getMyDomains() {
+        List<Domain> allDomains = service.getAll();
+        LOGGER.log(Level.WARNING, "Domains");
+        allDomains.stream().forEach(d -> LOGGER.log(Level.WARNING, d.getUid()));
+        LOGGER.log(Level.WARNING, "Roles");
+        identity.getRoles().stream().forEach(r -> LOGGER.log(Level.WARNING, r));
+        List<Domain> myDomains = allDomains.stream().filter(d -> identity.getRoles().contains(d.getUid())).collect(Collectors.toList());
+        return Response.ok().entity(myDomains).build();
     }
 
     @POST

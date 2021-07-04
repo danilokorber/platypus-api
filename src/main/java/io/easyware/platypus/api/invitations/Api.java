@@ -21,6 +21,7 @@ public class Api {
     @GET
     @Path("invitation/{invitationId}")
     public Response getInvitation(@PathParam("invitationId") String invitationId) {
+            service.scan(invitationId);
             return Response.ok().entity(service.getInvitation(invitationId)).build();
     }
 

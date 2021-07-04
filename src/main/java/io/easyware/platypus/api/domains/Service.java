@@ -26,8 +26,8 @@ public class Service {
         this.repository = repository;
     }
 
-    public List<Domain> getAllFromAccount(SecurityIdentity identity) {
-        return repository.listAll().stream().filter(domain -> identity.getRoles().contains(domain.getUid())).collect(Collectors.toList());
+    public List<Domain> getAll() {
+        return repository.listAll();
     }
 
     @Transactional

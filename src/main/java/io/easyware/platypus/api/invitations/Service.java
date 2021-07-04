@@ -31,6 +31,13 @@ public class Service {
     }
 
     @Transactional
+    public void scan(String invitationId) {
+        Invitation invitation = getInvitation(invitationId);
+        invitation.setScans(invitation.getScans() + 1);
+        //return invitation;
+    }
+
+    @Transactional
     public Invitation postConfirmation(String invitationId, Boolean confirm) {
         Invitation invitation = getInvitation(invitationId);
         invitation.setHasConfirmed(confirm);

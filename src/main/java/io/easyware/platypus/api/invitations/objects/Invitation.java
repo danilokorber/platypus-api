@@ -49,7 +49,6 @@ public class Invitation {
     @Column(name = "updated_by")
     private String updatedBy;
 
-    @NotBlank
     @Column(name = "scans")
     private int scans;
 

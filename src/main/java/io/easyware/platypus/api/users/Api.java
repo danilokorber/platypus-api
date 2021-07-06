@@ -33,6 +33,8 @@ public class Api {
     @PUT
     @Path("me")
     @NoCache
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
     public Response mePut(Profile profile) {
         LOGGER.log(Level.INFO, "API Call");
         return Response.ok().entity(identity.getAttribute("sub").toString()).build();

@@ -1,10 +1,12 @@
 package io.easyware.platypus.api.users.objects;
 
+import javax.json.bind.annotation.JsonbDateFormat;
 import java.util.Date;
 
 public class ProfileAttributes {
 
     private String locale;
+    @JsonbDateFormat("yyyy-MM-dd")
     private Date birthdate;
     private String street;
     private String locality;

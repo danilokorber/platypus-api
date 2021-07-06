@@ -6,7 +6,7 @@ import java.util.Date;
 public class ProfileAttributes {
 
     private String locale;
-    @JsonbDateFormat("yyyy-MM-dd")
+    @JsonbDateFormat(value = "yyyy-MM-dd")
     private Date birthdate;
     private String street;
     private String locality;

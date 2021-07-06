@@ -1,32 +1,30 @@
 package io.easyware.platypus.api.users.objects;
 
 import javax.json.bind.annotation.JsonbDateFormat;
-import java.util.Date;
+import java.time.LocalDate;
 
 public class ProfileAttributes {
 
     private String locale;
     @JsonbDateFormat(value = "yyyy-MM-dd HH:mm:ss")
-    private Date birthdate;
+    private LocalDate birthdate;
     private String street;
     private String locality;
     private String postalCode;
     private String country;
     private String picture;
 
-    public String getLocale() {
-        return locale;
-    }
+    public String getLocale() { return locale; }
 
     public void setLocale(String locale) {
         this.locale = locale;
     }
 
-    public Date getBirthdate() {
+    public LocalDate getBirthdate() {
         return birthdate;
     }
 
-    public void setBirthdate(Date birthdate) {
+    public void setBirthdate(LocalDate birthdate) {
         this.birthdate = birthdate;
     }
 

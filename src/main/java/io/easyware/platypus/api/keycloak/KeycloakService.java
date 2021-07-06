@@ -2,7 +2,7 @@ package io.easyware.platypus.api.keycloak;
 
 import io.easyware.platypus.api.keycloak.objects.Role;
 import io.easyware.platypus.api.keycloak.objects.TokenResponseBody;
-import io.easyware.platypus.api.users.objects.Profile;
+import io.easyware.platypus.api.users.objects.UserRepresentation;
 import org.eclipse.microprofile.rest.client.inject.RegisterRestClient;
 import org.jboss.resteasy.annotations.providers.multipart.MultipartForm;
 
@@ -42,13 +42,21 @@ public interface KeycloakService {
                        @MultipartForm ArrayList<Role> role,
                        @HeaderParam("Authorization") String bearerToken);
 
+    @GET
+    @Consumes(MediaType.APPLICATION_JSON)
+    @Produces(MediaType.APPLICATION_JSON)
+    @Path("admin/realms/{realm}/users/{userId}")
+    UserRepresentation getUser(@PathParam("realm") String realm,
+                    @PathParam("userId") String userId,
+                    @HeaderParam("Authorization") String bearerToken);
+
     @PUT
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
     @Path("admin/realms/{realm}/users/{userId}")
     void updateUser(@PathParam("realm") String realm,
                     @PathParam("userId") String userId,
-                    @MultipartForm Profile profile,
+                    @MultipartForm UserRepresentation userRepresentation,
                     @HeaderParam("Authorization") String bearerToken);
 
 }

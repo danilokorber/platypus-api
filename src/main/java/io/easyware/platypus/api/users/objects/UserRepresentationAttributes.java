@@ -1,93 +1,70 @@
 package io.easyware.platypus.api.users.objects;
 
-import javax.json.bind.annotation.JsonbDateFormat;
-import java.time.LocalDate;
 import java.util.List;
 
 public class UserRepresentationAttributes {
 
-    private String country;
-    private String birthdate;
-    private String street;
-    private String postalCode;
-    private String locality;
-    private String locale;
-    private String picture;
+    private Object country;
+    private Object birthdate;
+    private Object street;
+    private Object postalCode;
+    private Object locality;
+    private Object locale;
+    private Object picture;
 
-    public String getCountry() {
+    public Object getCountry() {
         return country;
     }
 
-    public void setCountry(List<String> country) {
-        this.country = country.get(0);
-    }
-    public void setCountry(String country) {
+    public void setCountry(Object country) {
         this.country = country;
     }
 
-    public String getBirthdate() {
+    public Object getBirthdate() {
         return birthdate;
     }
 
-    public void setBirthdate(List<String> birthdate) {
-        this.birthdate = birthdate.get(0);
-    }
-    public void setBirthdate(String birthdate) {
+    public void setBirthdate(Object birthdate) {
         this.birthdate = birthdate;
     }
 
-    public String getStreet() {
+    public Object getStreet() {
         return street;
     }
 
-    public void setStreet(List<String> street) {
-        this.street = street.get(0);
-    }
-    public void setStreet(String street) {
+    public void setStreet(Object street) {
         this.street = street;
     }
 
-    public String getPostalCode() {
+    public Object getPostalCode() {
         return postalCode;
     }
 
-    public void setPostalCode(List<String> postalCode) {
-        this.postalCode = postalCode.get(0);
-    }
-    public void setPostalCode(String postalCode) {
+    public void setPostalCode(Object postalCode) {
         this.postalCode = postalCode;
     }
 
-    public String getLocality() {
+    public Object getLocality() {
         return locality;
     }
 
-    public void setLocality(List<String> locality) {
-        this.locality = locality.get(0);
-    }
-    public void setLocality(String locality) {
+    public void setLocality(Object locality) {
         this.locality = locality;
     }
 
-    public String getLocale() {
+    public Object getLocale() {
         return locale;
     }
 
-    public void setLocale(List<String> locale) {
-        this.locale = locale.get(0);
-    }
-    public void setLocale(String locale) {
+    public void setLocale(Object locale) {
         this.locale = locale;
     }
 
-    public String getPicture() {
+    public Object getPicture() {
         return picture;
     }
 
-    public void setPicture(List<String> picture) {
-        this.picture = picture.get(0);
-    }
-    public void setPicture(String picture) {
+    public void setPicture(Object picture) {
         this.picture = picture;
     }
 }

@@ -15,8 +15,6 @@ v
 Fsrc/main/java/io/easyware/platypus/api/mail/objects/MessageUpdate.java,9/f/9f50b9bbacc0ceceb54e91bab503dce31b18b414
 |
 Lsrc/main/java/io/easyware/platypus/api/mail/objects/MessageUpdateParams.java,3/e/3e7360e6378cf0e4abea37fd10b3c8aa3f124aa0
-7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 o
 ?src/main/java/io/easyware/platypus/api/mail/objects/Thread.java,5/f/5f6ae285666e9ce649383d0eef8f86e115d2fd96
 s
@@ -29,9 +27,6 @@ Dsrc/main/java/io/easyware/platypus/api/mail/objects/EncodedSize.java,c/a/caa94
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
 4
 .env,3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
-:
-
-.gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
 s
 Csrc/main/java/io/easyware/platypus/api/mail/objects/SearchBody.java,f/d/fdf563ec659f13d15db0273dc99d46850284cd15
 p

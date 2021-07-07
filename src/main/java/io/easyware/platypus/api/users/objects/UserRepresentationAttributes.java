@@ -6,67 +6,67 @@ import java.util.List;
 
 public class UserRepresentationAttributes {
 
-    private List<String> country;
-    private List<String> birthdate;
-    private List<String> street;
-    private List<String> postalCode;
-    private List<String> locality;
-    private List<String> locale;
-    private List<String> picture;
+    private String country;
+    private String birthdate;
+    private String street;
+    private String postalCode;
+    private String locality;
+    private String locale;
+    private String picture;
 
-    public List<String> getCountry() {
+    public String getCountry() {
         return country;
     }
 
     public void setCountry(List<String> country) {
-        this.country = country;
+        this.country = country.get(0);
     }
 
-    public List<String> getBirthdate() {
+    public String getBirthdate() {
         return birthdate;
     }
 
     public void setBirthdate(List<String> birthdate) {
-        this.birthdate = birthdate;
+        this.birthdate = birthdate.get(0);
     }
 
-    public List<String> getStreet() {
+    public String getStreet() {
         return street;
     }
 
     public void setStreet(List<String> street) {
-        this.street = street;
+        this.street = street.get(0);
     }
 
-    public List<String> getPostalCode() {
+    public String getPostalCode() {
         return postalCode;
     }
 
     public void setPostalCode(List<String> postalCode) {
-        this.postalCode = postalCode;
+        this.postalCode = postalCode.get(0);
     }
 
-    public List<String> getLocality() {
+    public String getLocality() {
         return locality;
     }
 
     public void setLocality(List<String> locality) {
-        this.locality = locality;
+        this.locality = locality.get(0);
     }
 
-    public List<String> getLocale() {
+    public String getLocale() {
         return locale;
     }
 
     public void setLocale(List<String> locale) {
-        this.locale = locale;
+        this.locale = locale.get(0);
     }
 
-    public List<String> getPicture() {
+    public String getPicture() {
         return picture;
     }
 
     public void setPicture(List<String> picture) {
-        this.picture = picture;
+        this.picture = picture.get(0);
     }
 }

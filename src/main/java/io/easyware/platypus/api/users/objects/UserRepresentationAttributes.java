@@ -11,6 +11,7 @@ public class UserRepresentationAttributes {
     private Object locality;
     private Object locale;
     private Object picture;
+    private Object phoneNumber;
 
     public Object getCountry() {
         return country;
@@ -66,5 +67,13 @@ public class UserRepresentationAttributes {
 
     public void setPicture(Object picture) {
         this.picture = picture;
+    }
+
+    public Object getPhoneNumber() {
+        return phoneNumber;
+    }
+
+    public void setPhoneNumber(Object phoneNumber) {
+        this.phoneNumber = phoneNumber;
     }
 }

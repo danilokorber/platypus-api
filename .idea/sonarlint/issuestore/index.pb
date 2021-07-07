@@ -88,3 +88,7 @@ t
 Dsrc/main/java/io/easyware/platypus/api/projects/objects/Project.java,0/2/025e40151f5d09acec5e8d5adfa8ff9605ca4190
 q
 Asrc/main/java/io/easyware/platypus/api/keycloak/objects/Role.java,d/1/d198d9d514bfebd18cd05b7022be0697c69296a6
+k
+;src/main/java/io/easyware/platypus/api/invitations/Api.java,2/3/23648d81279c320f1d09454c71f6ecbe73c9ea10
+l
+<src/main/java/io/easyware/platypus/api/projects/Service.java,d/0/d0821bd9e48799e6388722e074e58e26dcc7d276

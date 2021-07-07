@@ -20,6 +20,8 @@ io/easyware/platypus/api/azure/objects/dns/Properties.class
 io/easyware/platypus/api/domains/Api.class
 io/easyware/platypus/api/projects/Api.class
 META-INF/panache-archive.marker
+io/easyware/platypus/api/users/objects/UserRepresentationAttributes.class
+io/easyware/platypus/api/users/objects/UserRepresentationFederatedIdentity.class
 io/easyware/platypus/api/invitations/Repository.class
 io/easyware/platypus/api/mail/objects/Thread.class
 io/easyware/platypus/api/azure/DnsService.class
@@ -32,9 +34,8 @@ io/easyware/platypus/shared/Common.class
 io/easyware/platypus/api/mail/objects/Attachment.class
 io/easyware/platypus/api/invitations/objects/Invitation.class
 io/easyware/platypus/api/azure/objects/dns/ResponseBody.class
-io/easyware/platypus/api/users/objects/Profile.class
+io/easyware/platypus/api/users/objects/UserRepresentation.class
 io/easyware/platypus/api/invitations/Service.class
-io/easyware/platypus/api/users/objects/ProfileAttributes.class
 io/easyware/platypus/api/domains/objects/Domain.class
 io/easyware/platypus/api/mail/objects/MessageUpdate.class
 io/easyware/platypus/api/domains/Repository.class

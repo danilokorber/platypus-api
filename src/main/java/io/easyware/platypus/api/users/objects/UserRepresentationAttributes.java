@@ -6,7 +6,7 @@ import java.util.List;
 
 public class UserRepresentationAttributes {
 
-    private List<String> country;
+    private String country;
     private List<String> birthdate;
     private List<String> street;
     private List<String> postalCode;
@@ -14,11 +14,11 @@ public class UserRepresentationAttributes {
     private List<String> locale;
     private List<String> picture;
 
-    public List<String> getCountry() {
+    public String getCountry() {
         return country;
     }
 
-    public void setCountry(List<String> country) {
+    public void setCountry(String country) {
         this.country = country;
     }
 

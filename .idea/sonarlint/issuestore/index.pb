@@ -45,8 +45,6 @@ y
 Isrc/main/java/io/easyware/platypus/api/azure/objects/dns/RequestBody.java,1/a/1a07de17fcfa551d154f6c0e5098b96e5e72fb3d
 o
 ?src/main/java/io/easyware/platypus/api/projects/Repository.java,b/d/bd499a4bce36edce3f6fdb22e20b6adca372f7c8
-r
-Bsrc/main/java/io/easyware/platypus/api/invitations/Repository.java,2/e/2e69e4954afae7c51fae391cffe5d8d5756f6901
 B
 config/Jenkinsfile,b/6/b6d0359779081f23c2f08ce9e9ea8d23040213f5
 r
@@ -73,18 +71,12 @@ l
 Osrc/main/java/io/easyware/platypus/api/azure/objects/auth/TokenRequestBody.java,2/e/2e0baec5f69894072e9577f2226bc24e7ed8e0b2
 d
 4src/main/java/io/easyware/platypus/api/mail/Api.java,3/2/32a5f038ec290ac74217923a092414712a428435
-o
-?src/main/java/io/easyware/platypus/api/invitations/Service.java,d/d/dd1a0a0e52df9d760deb3140058a77e48a8b4a39
 k
 ;src/main/java/io/easyware/platypus/api/domains/Service.java,2/2/223a634b41f8353372cd83d1f628ab13de9fa9c9
-z
-Jsrc/main/java/io/easyware/platypus/api/invitations/objects/Invitation.java,e/a/ea63b50e587e5bfd483769f66b4eb86622f9fea2
 t
 Dsrc/main/java/io/easyware/platypus/api/projects/objects/Project.java,0/2/025e40151f5d09acec5e8d5adfa8ff9605ca4190
 q
 Asrc/main/java/io/easyware/platypus/api/keycloak/objects/Role.java,d/1/d198d9d514bfebd18cd05b7022be0697c69296a6
-k
-;src/main/java/io/easyware/platypus/api/invitations/Api.java,2/3/23648d81279c320f1d09454c71f6ecbe73c9ea10
 l
 <src/main/java/io/easyware/platypus/api/projects/Service.java,d/0/d0821bd9e48799e6388722e074e58e26dcc7d276
 |
@@ -97,8 +89,6 @@ t
 Dsrc/main/java/io/easyware/platypus/api/keycloak/KeycloakService.java,8/4/845b357bf8efa0d2e74a017f165970597afc5907
 g
 7src/main/java/io/easyware/platypus/api/domains/Api.java,e/4/e4247364f48f81872e0b0412aa45fa845723f74e
-7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
@@ -106,3 +96,5 @@ e
 5src/main/java/io/easyware/platypus/api/users/Api.java,8/7/876a24198db7cc39fea4a126b358a9a7675d5971
 †
 Vsrc/main/java/io/easyware/platypus/api/users/objects/UserRepresentationAttributes.java,5/3/538a7c4928d83066924d5d4dc621bc8779cb2077
+z
+Jsrc/main/java/io/easyware/platypus/api/invitations/objects/Invitation.java,e/a/ea63b50e587e5bfd483769f66b4eb86622f9fea2

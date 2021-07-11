@@ -10,6 +10,7 @@ io/easyware/platypus/api/mail/Api.class
 io/easyware/platypus/api/mail/objects/EncodedSize.class
 io/easyware/platypus/api/domains/Service.class
 io/easyware/platypus/api/projects/Repository.class
+io/easyware/platypus/api/fin/Repository.class
 io/easyware/platypus/api/mail/objects/WebhookMessage.class
 io/easyware/platypus/api/mail/objects/SearchBody$Filters.class
 io/easyware/platypus/api/azure/AuthService.class
@@ -34,6 +35,7 @@ io/easyware/platypus/shared/Common.class
 io/easyware/platypus/api/mail/objects/Attachment.class
 io/easyware/platypus/api/invitations/objects/Invitation.class
 io/easyware/platypus/api/azure/objects/dns/ResponseBody.class
+io/easyware/platypus/api/fin/Service.class
 io/easyware/platypus/api/users/objects/UserRepresentation.class
 io/easyware/platypus/api/invitations/Service.class
 io/easyware/platypus/api/domains/objects/Domain.class
@@ -42,7 +44,9 @@ io/easyware/platypus/api/domains/Repository.class
 io/easyware/platypus/api/azure/objects/dns/ARecord.class
 io/easyware/platypus/api/projects/objects/Project.class
 io/easyware/platypus/api/azure/objects/auth/TokenResponseBody.class
+io/easyware/platypus/api/fin/Api.class
 io/easyware/platypus/api/mail/objects/SearchBody.class
 io/easyware/platypus/api/keycloak/objects/Role.class
 io/easyware/platypus/api/projects/Service.class
 io/easyware/platypus/api/azure/objects/auth/TokenRequestBody.class
+io/easyware/platypus/api/fin/objects/CostCenter.class

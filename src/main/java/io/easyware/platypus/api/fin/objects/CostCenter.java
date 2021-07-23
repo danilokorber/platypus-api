@@ -27,7 +27,7 @@ public class CostCenter {
     @Column(name="name")
     private String name;
 
-    @NotBlank
+    //@NotBlank
     @Column(name="is_active")
     private boolean isActive;
 

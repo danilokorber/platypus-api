@@ -25,8 +25,6 @@ t
 Dsrc/main/java/io/easyware/platypus/api/mail/objects/EncodedSize.java,c/a/caa945192b3d94423117f55cfd8eb6702e63bce7
 9
 	README.md,8/e/8ec9a00bfd09b3190ac6b22251dbb1aa95a0579d
-4
-.env,3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
 s
 Csrc/main/java/io/easyware/platypus/api/mail/objects/SearchBody.java,f/d/fdf563ec659f13d15db0273dc99d46850284cd15
 p
@@ -71,8 +69,6 @@ l
 Osrc/main/java/io/easyware/platypus/api/azure/objects/auth/TokenRequestBody.java,2/e/2e0baec5f69894072e9577f2226bc24e7ed8e0b2
 d
 4src/main/java/io/easyware/platypus/api/mail/Api.java,3/2/32a5f038ec290ac74217923a092414712a428435
-k
-;src/main/java/io/easyware/platypus/api/domains/Service.java,2/2/223a634b41f8353372cd83d1f628ab13de9fa9c9
 t
 Dsrc/main/java/io/easyware/platypus/api/projects/objects/Project.java,0/2/025e40151f5d09acec5e8d5adfa8ff9605ca4190
 q
@@ -92,9 +88,11 @@ g
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
-e
-5src/main/java/io/easyware/platypus/api/users/Api.java,8/7/876a24198db7cc39fea4a126b358a9a7675d5971
 †
 Vsrc/main/java/io/easyware/platypus/api/users/objects/UserRepresentationAttributes.java,5/3/538a7c4928d83066924d5d4dc621bc8779cb2077
 z
 Jsrc/main/java/io/easyware/platypus/api/invitations/objects/Invitation.java,e/a/ea63b50e587e5bfd483769f66b4eb86622f9fea2
+4
+.env,3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
+N
+src/main/docker/Dockerfile.jvm,6/1/6114331286b7e0a3b0b110e87eb46921b6460357

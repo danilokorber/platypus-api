@@ -18,7 +18,7 @@ public class CostCenter {
     @Column(name="parent_id")
     private int parentId;
 
-    @NotBlank
+//    @NotBlank
     @Column(name="domain_id")
     private int domainId;
 
@@ -27,7 +27,7 @@ public class CostCenter {
     @Column(name="name")
     private String name;
 
-    @NotBlank
+    //@NotBlank
     @Column(name="is_active")
     private boolean isActive;
 

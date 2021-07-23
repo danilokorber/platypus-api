@@ -4,6 +4,7 @@ import io.easyware.platypus.api.fin.objects.CostCenter;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
+import javax.transaction.Transactional;
 import javax.ws.rs.core.UriBuilder;
 import java.net.URI;
 import java.util.List;
@@ -36,5 +37,12 @@ public class Service {
         List<CostCenter> listOfCostCenters = repository.listAll().stream().filter(c -> c.getDomainId() == domainId && c.getParentId() == parentId).collect(Collectors.toList());
         listOfCostCenters.forEach(costCenter -> costCenter.setChildren(getCostCenters(domainId, costCenter.getId())) );
         return listOfCostCenters;
+    }
+
+    @Transactional
+    public CostCenter addCostCenter(CostCenter costCenter) {
+        costCenter.setActive(true);
+        repository.persistAndFlush(costCenter);
+        return repository.find("domainId = ?1 and name = ?2", costCenter.getDomainId(), costCenter.getName()).firstResult();
     }
 }

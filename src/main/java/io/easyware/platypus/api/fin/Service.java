@@ -41,7 +41,6 @@ public class Service {
 
     @Transactional
     public CostCenter addCostCenter(CostCenter costCenter) {
-        costCenter.setActive(true);
         repository.persistAndFlush(costCenter);
         return repository.find("domainId = ?1 and name = ?2", costCenter.getDomainId(), costCenter.getName()).firstResult();
     }

@@ -36,6 +36,7 @@ public class Api {
     @Path("cost_centers")
     public Response postCostCentersForDomain(CostCenter costCenter) {
         LOGGER.log(Level.INFO, "Creating new cost center " + costCenter.getName());
+        costCenter.setActive(true);
         CostCenter newlyAddedCostCenter = service.addCostCenter(costCenter);
         final URI newCostCenterUri = UriBuilder.fromResource(Api.class).path("cost_centers/{id}").build(newlyAddedCostCenter.getId());
         return Response.created(newCostCenterUri).entity(newlyAddedCostCenter).build();

@@ -28,6 +28,11 @@ public class Service {
         return repository.listAll().stream().filter(c -> c.getDomainId() == domainId && c.getParentId() == 0).collect(Collectors.toList());
     }
 
+    @Transactional
+    public CostCenter getCostCenter(int id) {
+        return repository.findById((long)id);
+    }
+
     public List<CostCenter> getCostCenters(int domainId) {
         return getCostCenters(domainId, 0);
     }
@@ -43,5 +48,10 @@ public class Service {
     public CostCenter addCostCenter(CostCenter costCenter) {
         repository.persistAndFlush(costCenter);
         return repository.find("domainId = ?1 and name = ?2", costCenter.getDomainId(), costCenter.getName()).firstResult();
+    }
+
+    @Transactional
+    public void deleteCostCenter(CostCenter costCenter) {
+        repository.delete(costCenter);
     }
 }

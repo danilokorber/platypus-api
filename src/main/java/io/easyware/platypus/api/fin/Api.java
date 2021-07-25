@@ -41,4 +41,13 @@ public class Api {
         final URI newCostCenterUri = UriBuilder.fromResource(Api.class).path("cost_centers/{id}").build(newlyAddedCostCenter.getId());
         return Response.created(newCostCenterUri).entity(newlyAddedCostCenter).build();
     }
+
+    @DELETE
+    @Path("cost_centers/{id}")
+    public Response deleteCostCentersForDomain(@PathParam("id") int id) {
+        CostCenter costCenter = service.getCostCenter(id);
+        LOGGER.log(Level.INFO, "Deleting cost center " + costCenter.getName());
+        service.deleteCostCenter(costCenter);
+        return Response.accepted().build();
+    }
 }

@@ -8,6 +8,7 @@ import javax.transaction.Transactional;
 import javax.ws.rs.core.UriBuilder;
 import java.net.URI;
 import java.util.List;
+import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
@@ -28,7 +29,7 @@ public class Service {
         return repository.listAll().stream().filter(c -> c.getDomainId() == domainId && c.getParentId() == 0).collect(Collectors.toList());
     }
 
-    public CostCenter getCostCenter(int id) { return repository.listAll().get(id); }
+    public CostCenter getCostCenter(int id) { return repository.listAll().stream().filter(c -> c.getId() == id).findFirst().get(); }
 
     public List<CostCenter> getCostCenters(int domainId) {
         return getCostCenters(domainId, 0);
@@ -48,7 +49,7 @@ public class Service {
     }
 
     @Transactional
-    public void deleteCostCenter(CostCenter costCenter) {
-        repository.delete(costCenter);
+    public void deleteCostCenter(int id) {
+        repository.delete("id = ?1", id);
     }
 }

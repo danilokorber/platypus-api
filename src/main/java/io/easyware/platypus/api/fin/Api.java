@@ -8,6 +8,7 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 import javax.ws.rs.core.UriBuilder;
 import java.net.URI;
+import java.util.Optional;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -45,9 +46,8 @@ public class Api {
     @DELETE
     @Path("cost_centers/{id}")
     public Response deleteCostCentersForDomain(@PathParam("id") int id) {
-        CostCenter costCenter = service.getCostCenter(id);
-        LOGGER.log(Level.INFO, "Deleting cost center " + costCenter.getName());
-        service.deleteCostCenter(costCenter);
+        LOGGER.log(Level.INFO, "Deleting cost center " + id);
+        service.deleteCostCenter(id);
         return Response.accepted().build();
     }
 }

@@ -18,7 +18,7 @@ public class CostCenter {
     @Column(name="parent_id")
     private int parentId;
 
-    @NotBlank
+    //@NotBlank
     @Column(name="domain_id")
     private int domainId;
 

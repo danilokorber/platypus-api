@@ -28,10 +28,7 @@ public class Service {
         return repository.listAll().stream().filter(c -> c.getDomainId() == domainId && c.getParentId() == 0).collect(Collectors.toList());
     }
 
-    @Transactional
-    public CostCenter getCostCenter(long id) {
-        return repository.findById(id);
-    }
+    public CostCenter getCostCenter(int id) { return repository.findById((long) id); }
 
     public List<CostCenter> getCostCenters(int domainId) {
         return getCostCenters(domainId, 0);

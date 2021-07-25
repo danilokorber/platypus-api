@@ -44,7 +44,7 @@ public class Api {
 
     @DELETE
     @Path("cost_centers/{id}")
-    public Response deleteCostCentersForDomain(@PathParam("id") int id) {
+    public Response deleteCostCentersForDomain(@PathParam("id") long id) {
         CostCenter costCenter = service.getCostCenter(id);
         LOGGER.log(Level.INFO, "Deleting cost center " + costCenter.getName());
         service.deleteCostCenter(costCenter);

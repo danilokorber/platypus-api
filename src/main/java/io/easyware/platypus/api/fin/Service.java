@@ -29,8 +29,8 @@ public class Service {
     }
 
     @Transactional
-    public CostCenter getCostCenter(int id) {
-        return repository.findById((long)id);
+    public CostCenter getCostCenter(long id) {
+        return repository.findById(id);
     }
 
     public List<CostCenter> getCostCenters(int domainId) {

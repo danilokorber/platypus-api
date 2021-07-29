@@ -7,6 +7,8 @@ import javax.inject.Inject;
 import javax.transaction.Transactional;
 import javax.ws.rs.core.UriBuilder;
 import java.net.URI;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
 import java.util.logging.Level;
@@ -19,6 +21,9 @@ public class Service {
 
     private final Repository repository;
     private final URI uri = UriBuilder.fromPath("/").build();
+
+    private Comparator<CostCenter> compareByName = (CostCenter cc1, CostCenter cc2) ->
+            cc1.getName().compareTo( cc2.getName() );
 
     @Inject
     public Service(Repository repository) {
@@ -39,6 +44,7 @@ public class Service {
         LOGGER.log(Level.INFO, "domainId: " + domainId + " parentId: " + parentId);
         List<CostCenter> listOfCostCenters = repository.listAll().stream().filter(c -> c.getDomainId() == domainId && c.getParentId() == parentId).collect(Collectors.toList());
         listOfCostCenters.forEach(costCenter -> costCenter.setChildren(getCostCenters(domainId, costCenter.getId())) );
+        Collections.sort(listOfCostCenters, this.compareByName);
         return listOfCostCenters;
     }
 

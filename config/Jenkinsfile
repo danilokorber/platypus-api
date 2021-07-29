@@ -54,13 +54,13 @@ pipeline {
 			}
 		}
 
-// 		stage("Lint") {
-// 			steps{
-// 				script {
-// 					sh "npm run sonar"
-// 				}
-// 			}
-// 		}
+		stage("Lint") {
+			steps{
+				script {
+					sh "sonar-scanner -Dproject.settings=./config/sonar.properties"
+				}
+			}
+		}
 
 // 		stage("Build app") {
 // 			steps{

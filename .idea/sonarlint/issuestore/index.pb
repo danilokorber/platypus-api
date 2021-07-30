@@ -92,17 +92,5 @@ N
 src/main/docker/Dockerfile.jvm,6/1/6114331286b7e0a3b0b110e87eb46921b6460357
 r
 Bsrc/main/java/io/easyware/platypus/api/fin/objects/CostCenter.java,c/8/c834576d0ecbf7aa233ede9fa19dde10368bc73d
-c
-3src/main/java/io/easyware/platypus/api/fin/Api.java,0/8/08cc82ed717e6639af80aa11cd6fce21cdced8ab
-g
-7src/main/java/io/easyware/platypus/api/fin/Service.java,f/5/f57f9de96f4a0f22def067e00d6e512f200108ac
-7
-pom.xml,4/4/442292b8a7efeabbe4cc176709b833b1792140ec
-k
-;src/main/java/io/easyware/platypus/api/domains/Service.java,2/2/223a634b41f8353372cd83d1f628ab13de9fa9c9
 G
 config/sonar.properties,c/7/c7156e5d3dced778f4aca1554c3a062d71411681
-B
-config/Jenkinsfile,b/6/b6d0359779081f23c2f08ce9e9ea8d23040213f5
-D
-config/settings.json,e/3/e3357f6213a8bcc948d6ecbb1184e12f518c9598

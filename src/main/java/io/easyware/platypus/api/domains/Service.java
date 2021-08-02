@@ -36,6 +36,9 @@ public class Service {
     }
 
     @Transactional
+    public Domain getByID(int id) {return repository.find("id", id).firstResult(); }
+
+    @Transactional
     public Domain add(Domain domain) {
         repository.persistAndFlush(domain);
         return getByUUID(domain.getUid());

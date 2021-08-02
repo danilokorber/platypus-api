@@ -28,7 +28,7 @@ pipeline {
 
 					echo "applicationName: ${props.name}"
 					echo "applicationVersion: ${props.version}"
-					//sh "npm config set registry https://${props.jenkins.nexus.hostname}/repository/easyware-npm-group"
+					//sh "npm config set registry https://${props.jenkins.nexus.hostname}/repositoryCostCenter/easyware-npm-group"
 					sh "docker login -u ${CRED_NEXUS_USR} -p ${CRED_NEXUS_PSW} ${props.jenkins.nexus.hostname}:${props.jenkins.nexus.hostedPort}"
 				}
 			}
@@ -64,14 +64,6 @@ pipeline {
 
 			}
 		}
-
-// 		stage("Build app") {
-// 			steps{
-// 				script {
-// 					sh "npm run build:prod"
-// 				}
-// 			}
-// 		}
 
 		stage("Build docker") {
 			steps{

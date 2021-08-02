@@ -10,7 +10,7 @@ io/easyware/platypus/api/mail/Api.class
 io/easyware/platypus/api/mail/objects/EncodedSize.class
 io/easyware/platypus/api/domains/Service.class
 io/easyware/platypus/api/projects/Repository.class
-io/easyware/platypus/api/fin/Repository.class
+io/easyware/platypus/api/fin/repositories/RepositoryCostCenter.class
 io/easyware/platypus/api/mail/objects/WebhookMessage.class
 io/easyware/platypus/api/mail/objects/SearchBody$Filters.class
 io/easyware/platypus/api/azure/AuthService.class
@@ -24,6 +24,7 @@ META-INF/panache-archive.marker
 io/easyware/platypus/api/users/objects/UserRepresentationAttributes.class
 io/easyware/platypus/api/users/objects/UserRepresentationFederatedIdentity.class
 io/easyware/platypus/api/invitations/Repository.class
+io/easyware/platypus/api/fin/repositories/RepositoryExpense.class
 io/easyware/platypus/api/mail/objects/Thread.class
 io/easyware/platypus/api/azure/DnsService.class
 io/easyware/platypus/api/keycloak/objects/TokenRequestBody.class
@@ -32,6 +33,7 @@ io/easyware/platypus/api/mail/objects/MessageList.class
 io/easyware/platypus/api/azure/objects/dns/RequestBody.class
 io/easyware/platypus/api/invitations/Api.class
 io/easyware/platypus/shared/Common.class
+io/easyware/platypus/api/fin/objects/Expense.class
 io/easyware/platypus/api/mail/objects/Attachment.class
 io/easyware/platypus/api/invitations/objects/Invitation.class
 io/easyware/platypus/api/azure/objects/dns/ResponseBody.class
@@ -43,6 +45,8 @@ io/easyware/platypus/api/mail/objects/MessageUpdate.class
 io/easyware/platypus/api/domains/Repository.class
 io/easyware/platypus/api/azure/objects/dns/ARecord.class
 io/easyware/platypus/api/projects/objects/Project.class
+io/easyware/platypus/exceptions/PlatypusPermissionsException.class
+io/easyware/platypus/api/keycloak/Permissions.class
 io/easyware/platypus/api/azure/objects/auth/TokenResponseBody.class
 io/easyware/platypus/api/fin/Api.class
 io/easyware/platypus/api/mail/objects/SearchBody.class

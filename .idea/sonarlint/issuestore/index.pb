@@ -3,8 +3,6 @@ p
 @src/main/java/io/easyware/platypus/api/mail/objects/Message.java,d/c/dcf12897a6e04293416e46f9dca078a1e0f77630
 w
 Gsrc/main/java/io/easyware/platypus/api/mail/objects/WebhookMessage.java,5/e/5e5d384bf9e4093da784189d7cfb7b3eeed9f74c
-e
-5src/main/java/io/easyware/platypus/shared/Common.java,d/9/d97408bc4031b95e6523a8adad99c502973780e6
 m
 =src/main/java/io/easyware/platypus/api/mail/objects/Text.java,a/5/a5eedf1d2dffb51109f43eb81f2f2811d4dae984
 v
@@ -25,8 +23,6 @@ s
 Csrc/main/java/io/easyware/platypus/api/mail/objects/SearchBody.java,f/d/fdf563ec659f13d15db0273dc99d46850284cd15
 p
 @src/main/java/io/easyware/platypus/api/mail/objects/Address.java,c/6/c60f00196c0db424d1a5f1ecac923795afb79f5f
-g
-7src/main/java/io/easyware/platypus/api/mail/Helper.java,7/4/7483833af354461f0c4394d026c9aebe47e38c8d
 v
 Fsrc/main/java/io/easyware/platypus/api/azure/objects/dns/Metadata.java,8/8/880f851cce7d49f1b893272ab4ac54a38c8d76cd
 u
@@ -39,8 +35,6 @@ y
 Isrc/main/java/io/easyware/platypus/api/azure/objects/dns/RequestBody.java,1/a/1a07de17fcfa551d154f6c0e5098b96e5e72fb3d
 o
 ?src/main/java/io/easyware/platypus/api/projects/Repository.java,b/d/bd499a4bce36edce3f6fdb22e20b6adca372f7c8
-r
-Bsrc/main/java/io/easyware/platypus/api/domains/objects/Domain.java,4/f/4f22c5bad5a66655c4b4c0b7b436be9e4c7573e4
 t
 Dsrc/main/java/io/easyware/platypus/api/mail/objects/MessageList.java,4/a/4a5ddc5da5d95bed91d08a9a3cdf36654ddca780
 €
@@ -61,8 +55,6 @@ l
 <src/main/java/io/easyware/platypus/api/mail/ImapService.java,e/1/e14aea1abc65dcdc60edd2fc3d3ec9d70cb8bd20
 
 Osrc/main/java/io/easyware/platypus/api/azure/objects/auth/TokenRequestBody.java,2/e/2e0baec5f69894072e9577f2226bc24e7ed8e0b2
-d
-4src/main/java/io/easyware/platypus/api/mail/Api.java,3/2/32a5f038ec290ac74217923a092414712a428435
 t
 Dsrc/main/java/io/easyware/platypus/api/projects/objects/Project.java,0/2/025e40151f5d09acec5e8d5adfa8ff9605ca4190
 q
@@ -73,12 +65,6 @@ l
 Lsrc/main/java/io/easyware/platypus/api/users/objects/UserRepresentation.java,9/a/9a50a4b093932ac420e32a574e344601855733aa
 
 ]src/main/java/io/easyware/platypus/api/users/objects/UserRepresentationFederatedIdentity.java,a/2/a29d5884e62f86605c834c9e17ecfcc6bb74be38
-h
-8src/main/java/io/easyware/platypus/api/projects/Api.java,2/f/2ffb980bfb039eaf2a6e6fe70025cda1034ea2bc
-t
-Dsrc/main/java/io/easyware/platypus/api/keycloak/KeycloakService.java,8/4/845b357bf8efa0d2e74a017f165970597afc5907
-g
-7src/main/java/io/easyware/platypus/api/domains/Api.java,e/4/e4247364f48f81872e0b0412aa45fa845723f74e
 :
 
 .gitignore,a/5/a5cc2925ca8258af241be7e5b0381edf30266302
@@ -90,7 +76,33 @@ Jsrc/main/java/io/easyware/platypus/api/invitations/objects/Invitation.java,e/a
 .env,3/c/3c84dcdc6bbe3d7817c49dcdc327b926fea1808a
 N
 src/main/docker/Dockerfile.jvm,6/1/6114331286b7e0a3b0b110e87eb46921b6460357
-r
-Bsrc/main/java/io/easyware/platypus/api/fin/objects/CostCenter.java,c/8/c834576d0ecbf7aa233ede9fa19dde10368bc73d
 G
 config/sonar.properties,c/7/c7156e5d3dced778f4aca1554c3a062d71411681
+D
+config/settings.json,e/3/e3357f6213a8bcc948d6ecbb1184e12f518c9598
+B
+config/Jenkinsfile,b/6/b6d0359779081f23c2f08ce9e9ea8d23040213f5
+e
+5src/main/java/io/easyware/platypus/api/users/Api.java,8/7/876a24198db7cc39fea4a126b358a9a7675d5971
+g
+7src/main/java/io/easyware/platypus/api/mail/Helper.java,7/4/7483833af354461f0c4394d026c9aebe47e38c8d
+d
+4src/main/java/io/easyware/platypus/api/mail/Api.java,3/2/32a5f038ec290ac74217923a092414712a428435
+h
+8src/main/java/io/easyware/platypus/api/projects/Api.java,2/f/2ffb980bfb039eaf2a6e6fe70025cda1034ea2bc
+g
+7src/main/java/io/easyware/platypus/api/domains/Api.java,e/4/e4247364f48f81872e0b0412aa45fa845723f74e
+
+Osrc/main/java/io/easyware/platypus/exceptions/PlatypusPermissionsException.java,0/6/060ebd5862124c13482a56310ae8810ade1b9007
+t
+Dsrc/main/java/io/easyware/platypus/api/keycloak/KeycloakService.java,8/4/845b357bf8efa0d2e74a017f165970597afc5907
+e
+5src/main/java/io/easyware/platypus/shared/Common.java,d/9/d97408bc4031b95e6523a8adad99c502973780e6
+
+Qsrc/main/java/io/easyware/platypus/api/fin/repositories/RepositoryCostCenter.java,1/1/11b200a683b6f7820d77e4cc705fabd2f3449c39
+k
+;src/main/java/io/easyware/platypus/api/domains/Service.java,2/2/223a634b41f8353372cd83d1f628ab13de9fa9c9
+~
+Nsrc/main/java/io/easyware/platypus/api/fin/repositories/RepositoryExpense.java,f/8/f8d637790818fc4f3e04e939797732e74e73f900
+r
+Bsrc/main/java/io/easyware/platypus/api/fin/objects/CostCenter.java,c/8/c834576d0ecbf7aa233ede9fa19dde10368bc73d

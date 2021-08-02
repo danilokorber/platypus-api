@@ -3,6 +3,7 @@
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/keycloak/objects/Role.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/users/objects/UserRepresentationAttributes.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/SearchBody.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/fin/repositories/RepositoryExpense.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/domains/Repository.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/MessageUpdate.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/invitations/Service.java
@@ -24,16 +25,18 @@
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/azure/objects/dns/Metadata.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/azure/objects/auth/TokenResponseBody.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/azure/objects/dns/RequestBody.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/exceptions/PlatypusPermissionsException.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/Address.java
-/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/fin/Repository.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/azure/objects/dns/ResponseBody.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/keycloak/objects/TokenRequestBody.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/fin/repositories/RepositoryCostCenter.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/azure/objects/auth/TokenRequestBody.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/domains/Service.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/projects/objects/Project.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/invitations/objects/Invitation.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/fin/objects/CostCenter.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/invitations/Repository.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/fin/objects/Expense.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/fin/Api.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/MessageUpdateParams.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/projects/Service.java
@@ -46,5 +49,6 @@
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/Api.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/azure/Api.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/TextInfo.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/keycloak/Permissions.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/ImapService.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/WebhookMessage.java

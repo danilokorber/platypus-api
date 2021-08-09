@@ -7,6 +7,7 @@
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/domains/Repository.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/MessageUpdate.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/invitations/Service.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/fin/repositories/RepositoryExpenseGroup.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/domains/objects/Domain.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/keycloak/KeycloakService.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/Helper.java
@@ -48,6 +49,7 @@
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/domains/Api.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/Api.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/azure/Api.java
+/Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/fin/objects/ExpenseGroup.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/objects/TextInfo.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/keycloak/Permissions.java
 /Users/Q396322/Documents/git/platypus-api/src/main/java/io/easyware/platypus/api/mail/ImapService.java

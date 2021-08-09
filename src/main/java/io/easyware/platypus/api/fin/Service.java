@@ -1,20 +1,19 @@
 package io.easyware.platypus.api.fin;
 
 import io.easyware.platypus.api.fin.objects.CostCenter;
-import io.easyware.platypus.api.fin.objects.Expense;
+import io.easyware.platypus.api.fin.objects.ExpenseGroup;
 import io.easyware.platypus.api.fin.repositories.RepositoryCostCenter;
-import io.easyware.platypus.api.fin.repositories.RepositoryExpense;
+import io.easyware.platypus.api.fin.repositories.RepositoryExpenseGroup;
 import io.easyware.platypus.api.keycloak.Permissions;
 import io.easyware.platypus.exceptions.PlatypusPermissionsException;
 
 import javax.enterprise.context.ApplicationScoped;
 import javax.inject.Inject;
 import javax.transaction.Transactional;
-import javax.ws.rs.core.UriBuilder;
-import java.net.URI;
-import java.util.Collections;
+import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
+import java.util.Optional;
 import java.util.logging.Logger;
 import java.util.stream.Collectors;
 
@@ -23,18 +22,16 @@ public class Service {
     private static final Logger LOGGER = Logger.getLogger( Service.class.getName() );
 
     private final RepositoryCostCenter repositoryCostCenter;
-    private final RepositoryExpense repositoryExpense;
-    private final URI uri = UriBuilder.fromPath("/").build();
+    private final RepositoryExpenseGroup repositoryExpenseGroup;
 
-    private Comparator<CostCenter> compareByName = (CostCenter cc1, CostCenter cc2) ->
-            cc1.getName().compareTo( cc2.getName() );
 
+    private final Comparator<CostCenter> compareByName = Comparator.comparing(CostCenter::getName);
 
     @Inject
-    public Service(RepositoryCostCenter repositoryCostCenter, RepositoryExpense repositoryExpense) {
+    public Service(RepositoryCostCenter repositoryCostCenter, RepositoryExpenseGroup repositoryExpenseGroup) {
         this.repositoryCostCenter = repositoryCostCenter;
-        this.repositoryExpense = repositoryExpense;
-         }
+        this.repositoryExpenseGroup = repositoryExpenseGroup;
+    }
 
     @Inject
     Permissions permissions;
@@ -43,14 +40,14 @@ public class Service {
         if (permissions.hasPermissionInDomain(domainId)) {
             return repositoryCostCenter.listAll().stream().filter(c -> c.getDomainId() == domainId && c.getParentId() == 0).collect(Collectors.toList());
         } else {
-            return null;
+            return new ArrayList<>();
         }
     }
 
     public CostCenter getCostCenter(int id) throws PlatypusPermissionsException {
-        CostCenter cc = repositoryCostCenter.listAll().stream().filter(c -> c.getId() == id).findFirst().get();
-        if (permissions.hasPermissionInDomain(cc.getDomainId())) {
-            return cc;
+        Optional<CostCenter> cc = repositoryCostCenter.listAll().stream().filter(c -> c.getId() == id).findFirst();
+        if (cc.isPresent() && permissions.hasPermissionInDomain(cc.get().getDomainId())) {
+            return cc.get();
         } else {
             return null;
         }
@@ -66,12 +63,14 @@ public class Service {
             listOfCostCenters.forEach(costCenter -> {
                 try {
                     costCenter.setChildren(getCostCenters(domainId, costCenter.getId()));
-                } catch (PlatypusPermissionsException e) {}
+                } catch (PlatypusPermissionsException e) {
+                    LOGGER.severe(e.getMessage());
+                }
             });
-            Collections.sort(listOfCostCenters, this.compareByName);
+            listOfCostCenters.sort(this.compareByName);
             return listOfCostCenters;
         } else {
-            return null;
+            return new ArrayList<>();
         }
     }
 
@@ -93,11 +92,11 @@ public class Service {
         }
     }
 
-    public List<Expense> getExpenses(int domainId) throws PlatypusPermissionsException {
+    public List<ExpenseGroup> getExpenses(int domainId) throws PlatypusPermissionsException {
         if (permissions.hasPermissionInDomain(domainId)) {
-            return repositoryExpense.listAll().stream().filter(c -> c.getDomainId() == domainId).collect(Collectors.toList());
+            return repositoryExpenseGroup.listAll().stream().filter(g -> g.getDomainId() == domainId).collect(Collectors.toList());
         } else {
-            return null;
+            return new ArrayList<>();
         }
     }
 

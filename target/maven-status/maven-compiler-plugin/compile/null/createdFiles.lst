@@ -33,6 +33,7 @@ io/easyware/platypus/api/mail/objects/MessageList.class
 io/easyware/platypus/api/azure/objects/dns/RequestBody.class
 io/easyware/platypus/api/invitations/Api.class
 io/easyware/platypus/shared/Common.class
+io/easyware/platypus/api/fin/objects/ExpenseGroup.class
 io/easyware/platypus/api/fin/objects/Expense.class
 io/easyware/platypus/api/mail/objects/Attachment.class
 io/easyware/platypus/api/invitations/objects/Invitation.class
@@ -49,6 +50,7 @@ io/easyware/platypus/exceptions/PlatypusPermissionsException.class
 io/easyware/platypus/api/keycloak/Permissions.class
 io/easyware/platypus/api/azure/objects/auth/TokenResponseBody.class
 io/easyware/platypus/api/fin/Api.class
+io/easyware/platypus/api/fin/repositories/RepositoryExpenseGroup.class
 io/easyware/platypus/api/mail/objects/SearchBody.class
 io/easyware/platypus/api/keycloak/objects/Role.class
 io/easyware/platypus/api/projects/Service.class

@@ -26,6 +26,12 @@ class FinIT {
                 .assertThat().body("size()", is(7));
     }
 
+    @Test
+    void testGetExpenses() {
+        getValidatableResponse("/expenses?domain_id=1")
+                .assertThat().body("size()", is(1));
+    }
+
     private ValidatableResponse getValidatableResponse (String route) {
         return given().when()
                 .get(restPath + "/fin" + route)

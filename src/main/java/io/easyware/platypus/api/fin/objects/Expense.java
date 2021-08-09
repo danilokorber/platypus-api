@@ -8,22 +8,21 @@ import java.util.Date;
 @Table(name = "expenses")
 public class Expense {
 
-    public Expense() {}
+    public Expense() {
+        // DEFAULT CONSTRUCTOR
+    }
 
     @Id
     private int id;
 
     @NotBlank
-    @Column(name = "domain_id")
-    private int domainId;
+    @Column(name = "expenses_groups_id")
+    private int expensesGroupId;
 
     @NotBlank
     @ManyToOne
     @JoinColumn(name = "cost_center_id")
     private CostCenter costCenter;
-
-    @Column(name = "date")
-    private String date;
 
     @NotBlank
     @Column(name = "value")
@@ -49,29 +48,25 @@ public class Expense {
         this.id = id;
     }
 
-    public int getDomainId() {
-        return domainId;
+    public int getExpensesGroupId() {
+        return expensesGroupId;
     }
 
-    public void setDomainId(int domainId) {
-        this.domainId = domainId;
+    public void setExpensesGroupId(int expensesGroupId) {
+        this.expensesGroupId = expensesGroupId;
     }
 
     public CostCenter getCostCenter() {
         return costCenter;
     }
 
-    public void setCostCenter(CostCenter costCenter) { this.costCenter = costCenter; }
-
-    public String getDate() {
-        return date;
+    public void setCostCenter(CostCenter costCenter) {
+        this.costCenter = costCenter;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public double getValue() {
+        return value;
     }
-
-    public double getValue() { return value; }
 
     public void setValue(double value) {
         this.value = value;
@@ -108,5 +103,4 @@ public class Expense {
     public void setUpdatedBy(String updatedBy) {
         this.updatedBy = updatedBy;
     }
-
 }
